@@ -45,7 +45,7 @@
 >
 >     * 變數 - @+英文字母+數字 範例
 >
->     ```
+>     ```sql
 >     Select dlvno, prdno, whno
 >     From cdd
 >     Where whno = @whno
