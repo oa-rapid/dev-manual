@@ -8,5 +8,5 @@
 * 前端開發須具備 html, css, javascript 基礎
 * 後端開發須具備 php 基礎
 
-[GitHub](https://github.com/oa-rapid/devmanual)
+[GitHub](https://github.com/oa-rapid/dev-manual)
 [Get Started](README.md)
