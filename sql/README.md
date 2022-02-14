@@ -1,9 +1,9 @@
 # SQL語法
 SQL 查詢語句
 
->[!tip] 參考網址
-[w3schools SQL](https://www.w3schools.com/sql/)
-SQL語法大致相同，但各家的SQL會有差異
+>[!tip]
+SQL語法大致相同，但各家的SQL會有差異 \
+參考網址 [w3schools SQL](https://www.w3schools.com/sql/)
 
 ## 基本語法
 
