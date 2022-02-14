@@ -9,4 +9,4 @@
 * 後端開發須具備 php 基礎
 
 [GitHub](https://github.com/oa-rapid/dev-manual)
-[Get Started](README.md)
+[開始吧](README.md)
