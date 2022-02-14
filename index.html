@@ -84,8 +84,15 @@
         noData: '找不到結果',
         depth: 3,
       },
-      // auto2top: true,
+      alias: {
+        '/.*/_sidebar.md': '_sidebar.md',
+        '/.*/_navbar.md': '_navbar.md',
+        '/.*/_coverpage.md': '_coverpage.md',
+      },
       name: 'OA-Rapid 開發手冊',
+      // auto2top: true,
+      maxAge: 86400000,
+      themeColor: 'darkgreen',
       // homepage: '/',
       repo: 'https://github.com/oa-rapid/dev-manual',
       loadSidebar: true,
@@ -145,8 +152,8 @@
   <!-- <script src="//unpkg.com/prismjs/components/prism-php.js"></script> -->
   <!-- <script src="//unpkg.com/prismjs/components/prism-sql.js"></script> -->
   <!-- <script src="//unpkg.com/prismjs/components/prism-javascript.js"></script> -->
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-css.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script> -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-css.min.js"></script> -->
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-php.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>

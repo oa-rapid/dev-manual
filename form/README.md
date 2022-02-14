@@ -17,4 +17,4 @@
 > 5. 訊息區 - 操作訊息
 > 6. 捷徑 - 個人快速開啟表單 (必須有權限)
 
-![](../.gitbook/assets/1.png)
+![](../images/form-area.png)
