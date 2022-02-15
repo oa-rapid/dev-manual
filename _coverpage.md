@@ -1,4 +1,4 @@
-![logo](https://docsify.js.org/_media/icon.svg)
+![logo](/images/oa-logo.png)
 
 # OA-Rapid 開發手冊
 
@@ -8,5 +8,4 @@
 * 前端開發須具備 html, css, javascript 基礎
 * 後端開發須具備 php 基礎
 
-[GitHub](https://github.com/oa-rapid/dev-manual)
 [開始吧](README.md)

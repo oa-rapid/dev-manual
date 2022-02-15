@@ -1,4 +1,5 @@
 # JS
+?>
 javascript 前端程式
 
 >[!tip] 參考網址
