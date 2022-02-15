@@ -23,6 +23,11 @@ var myDocsifyPlugin = function(hook, vm) {
 				$numbering.append($('<li/>').text(i));
 			}
 		});
+
+    $('p img').each(function() {
+			var str = $(this).attr('alt');
+			$(this).after(`<center><i>${str}</i></center>`);
+		});
 	});
 
 	hook.ready(function() {
