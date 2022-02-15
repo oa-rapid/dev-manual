@@ -109,8 +109,8 @@
 
 欄位格式化(改變顯示內容)
 
-> 範例 refno:'stus',retfld:'codena' 參數
->
+> 範例 refno:'stus',retfld:'codena'\
+> 參數
 > * refno - 參考查詢代碼
 > * retfld - 回傳欄位值
 

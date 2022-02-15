@@ -17,4 +17,6 @@
   - [程式碼片段](php/cheng-shi-ma-pian-duan.md)
 - [報表設計](report/README.md)
 - [SQL語法](sql/README.md)
+  - [常用語法](sql/sql-1.md)
+  - [內建函數](sql/sql-2.md)
 - [待辦設計](todo/README.md)

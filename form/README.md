@@ -1,8 +1,9 @@
 # 表單設計
 表單資料表的瀏覽及維護
 
+?>
+表單設計需具備 html、css基礎
 >[!tip]
-表單設計需具備 html、css基礎 \
 參考連結 [w3schools Html](https://www.w3schools.com/html/default.asp)
 
 ## 表單配置

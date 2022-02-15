@@ -1,0 +1,80 @@
+aside.sidebar ul li {
+  margin: 0 0 0 10px;
+  position: relative;
+}
+
+aside.sidebar ul li ul {
+  margin: 3px 0;
+}
+
+aside.sidebar ul li p {
+  padding-left: 22px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+aside.sidebar ul li a {
+  line-height: 35px;
+  font-size: 16px; /* 导航栏字体大小 */
+  padding: 0px 0 3px 12px;
+}
+
+aside.sidebar ul li.active > a {
+  font-size: 16px !important;
+}
+
+aside.sidebar ul li.active > a:before {
+  content: "" !important;
+  position: absolute !important;
+  margin: 0 !important;
+  width: 10px !important;
+  height: 10px !important;
+  top: 15px !important;
+  left: 0px !important;
+  border-radius: 50% !important;
+  background-color: #fed24a !important;
+  box-shadow: 0 0 0 3px rgba(254, 210, 74, 0.4) !important;
+}
+:root {
+  @randomMargin: `Math.round(Math.random() * 100)`;
+
+  /* Reduce the font size */
+  --base-font-size: 16px;
+
+  /* Change the theme color hue */
+  /* --theme-hue: 140; */
+
+  /* Change the sidebar bullets */
+  /* --sidebar-nav-link-before-content: '😀'; */
+}
+
+[v-pre] code {
+  padding: 1.5em 1.3em;
+  margin-left: 30px !important;
+}
+
+.code-line-box {
+  list-style-type: none;
+  border-right: 1px solid rgb(114, 114, 114);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  user-select: none;
+}
+.code-line-box {
+  padding: calc(1.5em + 1px) 0px !important;
+  /* padding-right: 50px !important; */
+  /* padding-bottom: calc(1.5em + 20px) !important; */
+  margin: 0px !important;
+}
+.code-line-box {
+  line-height: inherit !important;
+  /* background-color: #191919; */
+  color: #aaa;
+  font-weight: 400;
+  /* font-size: 0.85em; */
+  text-align: center;
+}
+
+

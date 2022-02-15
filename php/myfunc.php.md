@@ -73,7 +73,7 @@ myfunc::delStue('CVA', 'V');
 
 > 單據字軌設定畫面
 
-![](../images/form/php/MyFunc.php/單據字軌.png)
+![](../images/php/MyFunc.php/單據字軌.png)
 
 ```php
 myfunc::getAutonumber('20BO', 'chd', '20220101', '', true, $this->ut['dbconn']);

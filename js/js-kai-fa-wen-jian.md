@@ -1,5 +1,5 @@
 # JS 開發文件
->[!tip]
+?>
 前端開發 (javascript)
 
 ## 用戶端腳本 (form plugin)
