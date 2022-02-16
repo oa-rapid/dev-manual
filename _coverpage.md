@@ -1,4 +1,4 @@
-![logo](/images/oa-logo.png)
+![](/images/oa-logo.png)
 
 # OA-Rapid 開發手冊
 
