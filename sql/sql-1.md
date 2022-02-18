@@ -22,3 +22,5 @@ Select 後可使用聚合函數 \
 > Limit [開始位置], [筆數]
 
 ?> 第一筆位置為 0
+
+![](../images/empty.png ':size=900x1')

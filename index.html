@@ -19,6 +19,7 @@
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"> -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
   <!-- <link rel="stylesheet" href="_css/prism-coy-without-shadows.css"> -->
+  <link rel="stylesheet" href="_css/toc.css">
   <link rel="stylesheet" href="_css/prism-coldark-dark.css">
   <link rel="stylesheet" href="_css/style.css">
 </head>
@@ -86,6 +87,11 @@
         }
       },
       plugins: [myDocsifyPlugin],
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h1, h2, h3',
+        title:  '',
+      },
     }
   </script>
   <!-- <script src="https://unpkg.zhimg.com/docsify@4.9.4/lib/docsify.min.js"></script> -->
@@ -115,7 +121,7 @@
   <!-- <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script> -->
   <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
   <script src="//unpkg.com/docsify-plugin-flexible-alerts"></script>
-  <!-- <script src="_js/docsify-anchor.js"></script> -->
+  <script src="_js/toc.js"></script>
 
   <script src="//cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
   <script src="//cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>

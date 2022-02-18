@@ -13,3 +13,5 @@
 ## 判斷式
 
 > If([運算式], [true運算], [false運算])
+
+![](../images/empty.png ':size=900x1')

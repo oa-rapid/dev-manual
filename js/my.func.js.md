@@ -124,11 +124,13 @@ openFormById(menuid, modal, params);
 > * qryval - 搜尋值
 > * params - 用 | 整理qryfld,qryval成一個參數
 
-## Progress
+## 對話框
 
 ![](../images/js/my.func.js/Progress.png)
 
 ### showProgress(msg, callback)
+
+顯示等候對話框
 
 ```javascript
 showProgress('{查詢中}', () => {
@@ -138,6 +140,8 @@ showProgress('{查詢中}', () => {
 
 ### hideProgress()
 
+關閉等候對話框
+
 ```javascript
 showProgress('{查詢中}', () => {
   //code
@@ -145,9 +149,9 @@ showProgress('{查詢中}', () => {
 })
 ```
 
-## 對話框
-
 ### msgBox(msg)
+
+確認對話框
 
 ```javascript
 msgBox("文字訊息")
@@ -157,6 +161,8 @@ msgBox("文字訊息")
 
 ### msgBoxi(msg)
 
+確認對話框(帶圖示)
+
 ```javascript
 msgBoxi("文字訊息")
 ```
@@ -164,6 +170,8 @@ msgBoxi("文字訊息")
 ![](../images/js/my.func.js/msgBoxi.png)
 
 ### msgBoxe(msg)
+
+確認對話框(帶錯誤圖示)
 
 ```javascript
 msgBoxe("文字訊息")
@@ -173,6 +181,8 @@ msgBoxe("文字訊息")
 
 ### msgBoxw(msg)
 
+確認對話框(帶警告圖示)
+
 ```javascript
 msgBoxw("文字訊息")
 ```
@@ -180,6 +190,8 @@ msgBoxw("文字訊息")
 ![](../images/js/my.func.js/msgBoxw.png)
 
 ### msgBoxq(msg, callback, \[callback2])
+
+確認對話框(帶問號圖示)
 
 ```javascript
 msgBoxq("文字訊息",
