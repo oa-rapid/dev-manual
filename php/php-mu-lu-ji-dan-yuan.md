@@ -3,8 +3,10 @@
 檔案結構，控制單元，事件單元
 
 ## Routes
-路徑: api/routes/
 
+後端路由，api路徑
+
+> 路徑：api/routes/ \
 > web.php 代碼結構
 
 _範例一_
@@ -43,11 +45,12 @@ Route::group([
 >
 > * http://host/pub/get-server-date
 
-## Controller 單元
+## Controller
 
-> 路徑: api/app/Http/Controllers
+> api 單元 \
+> 路徑：api/app/Http/Controllers
 
-> 代碼結構
+### 代碼結構
 
 ```php
 <?php
@@ -204,10 +207,14 @@ public function afterScroll($masrow)
 
 ## Repsrc
 
-> 後端報表路徑: api/app/Http/Repsrc
+後端報表單元
+
+> 路徑: api/app/Http/Repsrc
 >
 > 寫法：略
 
-## Util 公用函數庫
+## Util
+
+公用函數庫
 
 > 路徑: api/app/Util
