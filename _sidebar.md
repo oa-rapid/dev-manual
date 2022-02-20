@@ -19,4 +19,6 @@
 - [SQL語法](sql/README.md)
   - [常用語法](sql/sql-1.md)
   - [內建函數](sql/sql-2.md)
+  - [自訂函數](sql/sql-3.md)
 - [待辦設計](todo/README.md)
+- [VS Code 編輯器](vscode_editor/README.md)

@@ -117,5 +117,7 @@ aside.sidebar ul li.active > a:before {
   }
 }
 
-
+. markdown-section {
+  min-width: 900px !important;
+}
 

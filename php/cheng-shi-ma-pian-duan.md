@@ -4,6 +4,8 @@
 
 ### beforepost
 
+存檔前
+
 ```php
 public function beforepost($masrow)
 {
@@ -18,6 +20,8 @@ public function beforepost($masrow)
 
 ### afterpost
 
+存檔後
+
 ```php
 public function afterpost($masrow)
 {
@@ -31,6 +35,8 @@ public function afterpost($masrow)
 > masrow - Master Edit 的資料
 
 ### afterScroll
+
+取得一份 Master-Detail 紀錄時
 
 ```php
 public function afterScroll($masrow)
