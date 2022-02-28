@@ -8,4 +8,3 @@ javascript 前端程式
 
 ---
 
-![](../images/empty.png ':size=900x1')

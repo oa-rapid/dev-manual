@@ -16,5 +16,3 @@ From 資料表 別名
 Where 條件
 Order By 別名.欄名1, 別名.欄名2, ...
 ```
-
-![](../images/empty.png ':size=900x1')
