@@ -56,8 +56,12 @@ public function afterScroll($masrow)
 
 ```php
 $res['affected'] = myfunc::execsql([
-  'sql' => "Insert Into oa_reppivot (repno, pvno, def ) Values (?,  ?,  ?)",
-  'param' => [$repno, $pvno, $def],
+  'sql' => "
+    Insert Into oa_reppivot 
+    (repno, pvno, def, datetime) 
+    Values 
+    (?,  ?,  ?, ?)",
+  'param' => [$repno, $pvno, $def, \Carbon\Carbon::now()],
   'dbconn' => $this->ut['dbconn'],
 ]);
 ```
@@ -67,6 +71,9 @@ $res['affected'] = myfunc::execsql([
 > * sql - sql 語句
 > * param - 輸入要載入的參數
 > * dbconn - 資料庫連線
+
+?> \Carbon\Carbon::now()
+會自動抓取當前 Timestamp 資料
 
 ### myfunc::execsql(String|Array $sql, \[$transaction], \[$dbconn])
 
@@ -231,3 +238,4 @@ myfunc::getAutonumber('20BO', 'chd', '20220101', '', true, $this->ut['dbconn']);
 > * dbconn - 資料庫連線
 
 ### myfunc::response($res);
+

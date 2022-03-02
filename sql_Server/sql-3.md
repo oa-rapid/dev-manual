@@ -35,68 +35,6 @@ addYear('20220101', '1')
 
 >結果: 20230101
 
-### 格式化
-
-#### formatDateStr
-日期格式化
-
-> 範例:
-
-```sql
-formatDateStr('20220101')
-```
-
->結果: 2022/01/01
-
-#### formatDateStr2
-日期格式化
-
-> 範例:
-
-```sql
-formatDateStr2('20220101','-')
-```
-
->結果: 2022-01-01
-
-#### formatDateTimeStr
-將日期轉化成 DateTime 格式
-
-> 範例一:
-
-```sql
-formatDateTimeStr('20220101201005')
-```
-
-> 結果一: 2022/01/01 20:10:05
-
-> 範例二:
-
-```sql
-formatDateTimeStr('20220101')
-```
-
-> 結果二: 2022/01/01 00:00:00
-
-#### formatTimeStr
-將時間格式化
-
-> 範例一:
-
-```sql
-formatTimeStr('201005')
-```
-
-> 結果一: 20:10:05
-
-> 範例二:
-
-```sql
-formatTimeStr('2010')
-```
-
-> 結果二: 20:10
-
 ### getWeekna
 星期幾
 
@@ -158,6 +96,68 @@ ServerYm()
 ```
 
 > 結果: 202201
+
+## 格式化
+
+### formatDateStr
+日期格式化
+
+> 範例:
+
+```sql
+formatDateStr('20220101')
+```
+
+>結果: 2022/01/01
+
+### formatDateStr2
+日期格式化
+
+> 範例:
+
+```sql
+formatDateStr2('20220101','-')
+```
+
+>結果: 2022-01-01
+
+### formatDateTimeStr
+將日期轉化成 DateTime 格式
+
+> 範例一:
+
+```sql
+formatDateTimeStr('20220101201005')
+```
+
+> 結果一: 2022/01/01 20:10:05
+
+> 範例二:
+
+```sql
+formatDateTimeStr('20220101')
+```
+
+> 結果二: 2022/01/01 00:00:00
+
+### formatTimeStr
+將時間格式化
+
+> 範例一:
+
+```sql
+formatTimeStr('201005')
+```
+
+> 結果一: 20:10:05
+
+> 範例二:
+
+```sql
+formatTimeStr('2010')
+```
+
+> 結果二: 20:10
 
 ## 其他
 ### chnum
