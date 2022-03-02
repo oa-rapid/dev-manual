@@ -3,6 +3,7 @@
 * [前端開發](js/README.md)
 * [後端開發](php/README.md)
 * [報表設計](report/README.md)
-* [SQL語法](sql/README.md)
+* [MySQL語法](mysql/README.md)
+* [SQL Server語法](sql_server/README.md)
 * [待辦設計](todo/README.md)
 * [VS Code 編輯器](vscode_editor/README.md)
