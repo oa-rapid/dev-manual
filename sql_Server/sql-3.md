@@ -232,7 +232,7 @@ getMonqty2('19500101')
 
 > 結果: 865.00
 
-### X getStusna(stus)
+### getStusna(stus)
 取得狀態名稱
 
 ### X getTypena(codno, typno)
