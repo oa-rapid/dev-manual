@@ -200,7 +200,7 @@ getAge('500101', '2')
 
 > 結果二: 61.18
 
-### X getCodena(codeno, fieldname)
+### getCodena(codeno, fieldname)
 參考代碼(系統) 資料
 
 > 範例:
@@ -250,7 +250,7 @@ getMonqty2('19500101')
 ### split(str, delim, pos)
 分割字串
 
-### X tranCaption(caption, lang)
+### tranCaption(caption, lang)
 多國語言翻譯
 
 ### trim0(num)
