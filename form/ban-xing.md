@@ -321,6 +321,30 @@ useage: master detail
 >   * title - 標題
 > * 第二行 form 要寫上 fom-Master
 
+#### 參考查詢設計
+
+```html
+<td><label for="bankno"><span data-i18n='金融機構'></span></label></td>
+<td>
+  <input name="bankno" class="w85">
+  <input refset="reffld:'bankno', keyfld:'bankno', retfld:'bankna'" class="w110">
+</td>
+<td>&nbsp;</td>
+<td><label for="bankdno"><span data-i18n='分行'></span></label></td>
+<td>
+  <input name="bankdno" reffilter="bankno" class="w85">
+  <input refset="reffld:'bankdno;bankno', keyfld:'bankdno;bankno', retfld:'bankdna'" class="w110">
+</td>
+```
+
+> 說明
+>
+> * reffilter - 預帶資料
+> * refset - 抓取資料
+>   * refset - 來源欄位 
+>   * keyfld - 對應欄位
+>   * retfld - 取回欄位
+
 ### Detail Grid
 
 ```html

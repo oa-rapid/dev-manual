@@ -8,7 +8,7 @@
 Create VIEW [viewname]
 As
 Select *
-From [tablename];
+From [tablename]
 ```
 
 ### Drop table
