@@ -377,6 +377,26 @@ useage: master detail
 >   * title - 標題
 > * 第二行 table 要寫上 grd-detail
 
+#### 參考查詢設計
+
+```html
+<th data-options="field:'bankno',width:95"><span data-i18n='金融機構'></span></th>
+<th data-options="field:'bankna_ref',width:150,
+  reffld:'bankno',keyfld:'bankno',retfld:'bankna'"><span data-i18n='名稱'></span>
+</th>
+<th data-options="field:'bankdno',reffilter:'bankno',width:95"><span data-i18n='分行'></span></th>
+<th data-options="field:'bankdna_ref',width:150,
+  reffld:'bankdno;bankno',keyfld:'bankdno;bankno',retfld:'bankdna'"><span data-i18n='名稱'></span></th>
+```
+
+> 說明
+>
+> * reffilter - 預帶資料
+> * refset - 抓取資料
+>   * refset - 來源欄位 
+>   * keyfld - 對應欄位
+>   * retfld - 取回欄位
+
 ### Copy Dialog
 
 複製時跳出視窗 提供可快速修改的欄位
