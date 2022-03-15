@@ -14,6 +14,7 @@ APP 使用 angularjs 1.x 為開發基礎，開發工具為 ionic＋cordova，可
 
 ![](../images/app-1.png)
 
+
 ## 開發步驟
 
 ### 新增 route
