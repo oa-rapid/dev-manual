@@ -222,6 +222,7 @@ openFormById('MAHA030010', false, params);
 > qryfld=field|qryval=value 開啟表單後自動查詢
 
 新增範例
+
 ```js
 var orditem = objM.getInputValue('item');
 var ordno = objM.getInputValue('quano');
@@ -231,14 +232,12 @@ openFormById('MAHA030010', false, params);
 ```
 
 查詢範例
+
 ```js
 var value = objM.getInputValue('quano');
 var param = `qryfld=ordno|qryval=${value}`
 openFormById('MAHA030010', false, params);
 ```
-
-
-
 
 ## 開啟 windows 報表
 
@@ -265,7 +264,7 @@ var repno = 'BSI030020';
 var params = {
   repno: repno,
   tplitem: '010',
-  keyval: {
+  keyval: {ㄋㄧ
     dlvno: objM.getInputValue('dlvno'),
     item: n==1 ? objD.getRow(1).item : '',
   },
@@ -287,7 +286,7 @@ var params = {
 openFormByRepId(params._repno, false, params)
 ```
 
-## userFormatter
+## 格式儲存格 userFormatter
 
 ### html
 

@@ -214,7 +214,7 @@ objM.getViewRow(3)
 設定 view 值
 
 > row : 以 object 方式傳入要修改的資料 <br>
->  
+>
 > idxRow : 選擇要讀取哪一列，是以 0 為第一筆
 
 _範例一_
@@ -279,6 +279,23 @@ objM.setInputValue(element,'文字更改')
 ```
 
 > 以搜尋出來的 欄位 進行修改
+
+
+### objM.setInputReadonly(String|Element field, Boolean)
+
+> 設定輸入欄位唯讀
+
+```js
+objM.setInputReadonly('sugprc', true);
+```
+
+### objM.setInputRequired(String|Element field, Boolean)
+
+> 設定輸入欄位必填
+
+```js
+objM.setInputRequired('sugprc', true);
+```
 
 ### objM.getMasterData()
 
