@@ -218,17 +218,26 @@ openFormById('MAHA030010', false, params);
 參數說明：
 > autoInsert=Y 開啟表單後，自動新增紀錄 \
 > notrigger=orditem  orditem 欄位不觸發onChange \
-> field=value 開啟表單後自動查詢 field
+> field=value 開啟表單後 field 自動帶入value
+> qryfld=field|qryval=value 開啟表單後自動查詢
 
-範例
+新增範例
 ```js
 var orditem = objM.getInputValue('item');
 var ordno = objM.getInputValue('quano');
 var prdno = objM.getInputValue('prdno');
 var params = `autoInsert=Y|orditem=${orditem}|ordno=${ordno}|prdno=${prdno}|notrigger=orditem`;
-// con (params)
 openFormById('MAHA030010', false, params);
 ```
+
+查詢範例
+```js
+var value = objM.getInputValue('quano');
+var param = `qryfld=ordno|qryval=${value}`
+openFormById('MAHA030010', false, params);
+```
+
+
 
 
 ## 開啟 windows 報表
