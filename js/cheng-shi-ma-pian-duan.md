@@ -175,7 +175,7 @@ public function importexcel(Request $request) {
         $data['rows'] = $rows;
         $res['data'][] = $data;
       }
-      
+
       $res['msg'] = '{匯入完成}';
     } catch (Exception $e) {
       $res['error'] = true;
@@ -205,6 +205,31 @@ this.reitem = () => {
   objD.setRows(0,rows);
 }
 ```
+
+## 開啟表單
+
+```js
+openFormById(menuid, modal, parameter);
+ex.
+var params = '參數字串';
+openFormById('MAHA030010', false, params);
+```
+
+參數說明：
+> autoInsert=Y 開啟表單後，自動新增紀錄 \
+> notrigger=orditem  orditem 欄位不觸發onChange \
+> field=value 開啟表單後自動查詢 field
+
+範例
+```js
+var orditem = objM.getInputValue('item');
+var ordno = objM.getInputValue('quano');
+var prdno = objM.getInputValue('prdno');
+var params = `autoInsert=Y|orditem=${orditem}|ordno=${ordno}|prdno=${prdno}|notrigger=orditem`;
+// con (params)
+openFormById('MAHA030010', false, params);
+```
+
 
 ## 開啟 windows 報表
 
