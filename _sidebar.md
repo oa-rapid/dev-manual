@@ -7,6 +7,7 @@
   - [分類維護](form/fen-lei-wei-hu.md)
   - [單據字軌設定](form/dan-ju-zi-gui-she-ding.md)
   - [庫存過帳設定](form/ku-cun-guo-zhang-she-ding.md)
+  - [表單語法片段](form/code.md)
 - [前端開發](js/README.md)
   - [JS 開發文件](js/js-kai-fa-wen-jian.md)
   - [my.func.js](js/my.func.js.md)
