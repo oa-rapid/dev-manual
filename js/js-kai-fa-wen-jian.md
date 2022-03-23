@@ -303,22 +303,6 @@ objM.setInputValue(element,'文字更改')
 
 > 以搜尋出來的 欄位 進行修改
 
-### objM.setInputReadonly(String|Element field, Boolean)
-
-> 設定輸入欄位唯讀
-
-```js
-objM.setInputReadonly('sugprc', true);
-```
-
-### objM.setInputRequired(String|Element field, Boolean)
-
-> 設定輸入欄位必填
-
-```js
-objM.setInputRequired('sugprc', true);
-```
-
 ## Master Dataset 操作
 
 ### objM.getMasterData()
