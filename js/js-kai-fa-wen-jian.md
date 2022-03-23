@@ -239,7 +239,7 @@ objM.setViewRow(row,3)
 
 > 更改第4筆的 Master View 資料
 
-## Master Data 修改
+## Master Edit get 操作
 
 ### objM.getInput(String field)
 
@@ -258,6 +258,29 @@ objM.getInputValue('dlvno')
 ```
 
 > 結果: "BO211109002"
+
+
+
+
+
+
+### objM.setInputReadonly(String fdna, Boolean bReadonly)
+
+> 設定edit唯讀
+
+```js
+objM.setInputReadonly('sugprc', true);
+```
+
+### objM.setInputRequired(fdna, bRequired)
+
+> 設定edit必須輸入
+
+```js
+objM.setInputRequired('sugprc', true);
+```
+
+## Master Edit set 操作
 
 ### objM.setInputValue(String|Element field, val)
 
@@ -280,7 +303,6 @@ objM.setInputValue(element,'文字更改')
 
 > 以搜尋出來的 欄位 進行修改
 
-
 ### objM.setInputReadonly(String|Element field, Boolean)
 
 > 設定輸入欄位唯讀
@@ -296,6 +318,8 @@ objM.setInputReadonly('sugprc', true);
 ```js
 objM.setInputRequired('sugprc', true);
 ```
+
+## Master Dataset 操作
 
 ### objM.getMasterData()
 
