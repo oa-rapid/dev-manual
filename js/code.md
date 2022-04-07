@@ -264,7 +264,7 @@ var repno = 'BSI030020';
 var params = {
   repno: repno,
   tplitem: '010',
-  keyval: {ㄋㄧ
+  keyval: {
     dlvno: objM.getInputValue('dlvno'),
     item: n==1 ? objD.getRow(1).item : '',
   },
