@@ -516,3 +516,39 @@ objM.setInputValue("rem","文字更改");
 ```javascript
 objM.getInputValue("rem");
 ```
+
+## detail 開啟(連結)到不同表單
+
+html 使用 userFormatter
+
+```html
+<tr>
+  <th data-options="field:'ordno',width:128,userFormatter:'linkto'"><span data-i18n='採購單編號(PO#)'></span></th>
+  ...
+```
+
+再寫 js code
+
+```javascript
+this.linkto = (val, row, index) => {
+  if(isEmpty(row) || !val) return;
+
+  var span = `<span ondblclick="$g.ctrlCustom${obj.name}.goto('${val}')" style="cursor:pointer">
+      ${val}
+    </span>`;
+  return span
+}
+
+this.goto = function(val) {
+  var menuid, param;
+  if (val.substr(0,2)=='PO') {
+    menuid = 'MAHA030030';
+    param = 'qryfld=ordno|qryval='+val;
+  } else if (val.substr(0,2)=='YS') {
+    menuid = 'MAHA040030';
+    param = 'qryfld=dlvno|qryval='+val;
+  }
+
+  if (menuid) openFormById(menuid, false, param);
+}
+```
