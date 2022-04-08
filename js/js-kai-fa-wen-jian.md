@@ -879,7 +879,7 @@ this.fnDetailBeforePasteRows = function(idxGrd, new_rows){
 > * idxGrd - 明細分頁
 > * new\_rows - 以 List 包 object 型態 取得使用者貼上的資料
 
-### x this.fnBeforeEditRow()
+### ~~this.fnBeforeEditRow()~~
 
 ### this.fnBeforeDeleteRow(idxGrd, row)
 
@@ -935,11 +935,34 @@ this.fnDetailAfterDelete = function(idxGrd){
 >
 > * idxGrd - 在哪一個分頁中被刪除
 
-### todo this.fnDetailAfterInsert()
+### this.fnDetailAfterInsert(idxGrd)
 
-### todo this.fnDetailAfterPost()
+Detail Grid 新增紀錄後觸發
 
-### todo this.fnDetailAfterPostRows()
+### this.fnDetailAfterPost(idxGrd)
+
+Detail Grid 單筆完成編輯後觸發
+
+### this.fnDetailAfterPostRows(idxGrd)
+
+Detail Grid 選取多筆完成後觸發
+
+範例
+
+```javascript
+this.fnDetailAfterPostRows = (idxGrd) => {
+  var rows = objD.getRows(idxGrd);
+  var row = rows[rows.length-1];
+  var masrow = objM.getMasterData();
+  getDtrnRow('get-qua', {quano: row.quano}, (res) => {
+    // con (res)
+    if (!masrow.salesman && res.salesman) masrow.salesman = res.salesman;
+    if (!masrow.salesman2 && res.salesman2) masrow.salesman2 = res.salesman2;
+    if (!masrow.contno && res.contno) masrow.contno = res.contno;
+    objM.setMasterData(masrow);
+  });
+}
+```
 
 ### this.fnDetailAfterScroll()
 
