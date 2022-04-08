@@ -23,7 +23,7 @@ function FormCtrl6C(objM, objD){
   var tabEdit;
 
   this.init = function() {
-    tabEdit = obj.objM.tabEdit;
+    tabEdit = objM.tabEdit;
   }
 
   this.setToolbar = function() {
@@ -137,7 +137,7 @@ objM.setButtonEnable('btnid', false)
 
 > 結果: 關閉按鈕 btnid
 
-## Master view 修改
+## Master view 操作
 
 ### objM.getViewRows()
 
@@ -147,7 +147,7 @@ objM.setButtonEnable('btnid', false)
 objM.getViewRows()
 ```
 
-> 會取得左上角紅色區域 Master View 的資料
+> 會取得 Master View 的資料
 
 ```javascript
 [
@@ -239,7 +239,7 @@ objM.setViewRow(row,3)
 
 > 更改第4筆的 Master View 資料
 
-## Master Edit get 操作
+## Master Edit 操作
 
 ### objM.getInput(String field)
 
@@ -279,8 +279,6 @@ objM.setInputReadonly('sugprc', true);
 ```js
 objM.setInputRequired('sugprc', true);
 ```
-
-## Master Edit set 操作
 
 ### objM.setInputValue(String|Element field, val)
 
@@ -532,18 +530,6 @@ this.fnCancelEdit = function() {
 this.fnOnQuery= function() {
     //code
 }
-```
-
-Detial
-
-## 方法 (method)
-
-### objD.getSelectGrdIndex()
-
-取得當前是第幾個分頁(從0開始)
-
-```javascript
-var idxGrd = objD.getSelectGrdIndex()
 ```
 
 ## Detial Data 修改
@@ -995,3 +981,38 @@ this.fnDetailModelChange = (field, value) => {
     //code...
 }
 ```
+
+Detial
+
+## 其他方法 (method)
+
+### objD.getSelectGrdIndex()
+
+取得當前是第幾個分頁(從0開始)
+
+```javascript
+var idxGrd = objD.getSelectGrdIndex()
+```
+
+### objM.bindGridCell(o, e, f, idx)
+
+detail grid cell 事件
+
+> 在 userFormatter 中使用 \
+> 參數 o: this, e: event, ex. 'dblclick', f: function, idx: row index
+
+範例
+```javascript
+this.linkto = function(val, row, idx) {
+  if(isEmpty(row) || !val) return;
+
+  objM.bindGridCell(this, 'dblclick', ()=>{
+    obj.goto(val);
+  }, idx);
+
+  return val;
+}
+```
+
+
+

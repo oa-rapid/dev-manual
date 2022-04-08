@@ -530,6 +530,20 @@ html 使用 userFormatter
 再寫 js code
 
 ```javascript
+this.linkto = function(val, row, idx) {
+  if(isEmpty(row) || !val) return;
+
+  objM.bindGridCell(this, 'dblclick', ()=>{
+    obj.goto(val);
+  }, idx);
+
+  return val;
+}
+```
+
+或寫
+
+```javascript
 this.linkto = (val, row, index) => {
   if(isEmpty(row) || !val) return;
 
@@ -538,7 +552,11 @@ this.linkto = (val, row, index) => {
     </span>`;
   return span
 }
+```
 
+呼叫
+
+```javascript
 this.goto = function(val) {
   var menuid, param;
   if (val.substr(0,2)=='PO') {
