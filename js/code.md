@@ -533,11 +533,36 @@ html 使用 userFormatter
 this.linkto = function(val, row, idx) {
   if(isEmpty(row) || !val) return;
 
-  objM.bindGridCell(this, 'dblclick', ()=>{
-    obj.goto(val);
-  }, idx);
+  var span = `<span class="cell-ordno" style="cursor:pointer">${val}</span>`;
+  return span;
+}
 
-  return val;
+
+//init bind grid cell
+this.init = function() {
+  //...
+
+  objM.bindGridCell({
+    idxGrd: 0,
+    field: 'ordno',
+    class: 'cell-ordno',
+    //可bind 多個 event
+    events:[{
+      event: 'dblclick',
+      fn: (val, row, idx, cell) => {
+        var menuid, param;
+        if (val.substr(0,2)=='PO') {
+          menuid = 'MAHA030030';
+          param = 'qryfld=ordno|qryval='+val;
+        } else if (val.substr(0,2)=='YS') {
+          menuid = 'MAHA040030';
+          param = 'qryfld=dlvno|qryval='+val;
+        }
+
+        if (menuid) openFormById(menuid, false, param);
+      }
+    }],
+  });
 }
 ```
 
@@ -552,11 +577,9 @@ this.linkto = (val, row, index) => {
     </span>`;
   return span
 }
-```
 
-呼叫
+//呼叫
 
-```javascript
 this.goto = function(val) {
   var menuid, param;
   if (val.substr(0,2)=='PO') {
