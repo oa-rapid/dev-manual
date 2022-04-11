@@ -542,10 +542,10 @@ this.linkto = function(val, row, idx) {
 this.init = function() {
   //...
 
-  objM.bindGridCell({
+  objD.bindGridCell({
     idxGrd: 0,
     field: 'ordno',
-    class: 'cell-ordno',
+    // class: 'cell-ordno',
     //可bind 多個 event
     events:[{
       event: 'dblclick',
