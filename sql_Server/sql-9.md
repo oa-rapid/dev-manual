@@ -49,3 +49,24 @@ ALTER TABLE oa_users ALTER COLUMN depno varchar(20) DEFAULT NULL;
 ```sql
 ALTER TABLE [tablename] DROP COLUMN [fieldname];
 ```
+
+### 解析JSON字串
+
+使用 OPENJSON 解析，加上 With 可定義 Path
+
+```sql
+  Select *
+  from OPENJSON(
+    (
+      Select json
+      From oa_files
+      Where keyval='0508.500MXP'
+      And tablename='ap_prod'
+    )
+  )
+  With ( -- path
+    item varchar(3) '$.item',
+    atttype varchar(3) '$.atttype',
+    flna varchar(20) '$.flna'
+  )
+```
