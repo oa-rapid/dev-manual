@@ -52,7 +52,7 @@ ALTER TABLE [tablename] DROP COLUMN [fieldname];
 
 ### 解析JSON字串
 
-使用 OPENJSON 解析，加上 With 可定義 Path
+使用 OPENJSON 解析，加上 With 可定義 Path；以下範例可解析出一DataSet
 
 ```sql
   Select *
