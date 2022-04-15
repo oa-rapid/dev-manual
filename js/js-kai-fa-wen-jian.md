@@ -478,7 +478,8 @@ this.fnAfterScroll = function(res) {
 }
 ```
 
-> res 的資料 是透過 撰寫 \[menuid]Event.php 裡的 function afterScroll 回傳的資料
+> 圖檔/附件資料會自動帶在res中 \
+> 透過撰寫 \[menuid]Event.php 裡的 function afterScroll 回傳的資料，也會帶在 res
 
 ### this.fnAfterGrdViewLoad()
 
