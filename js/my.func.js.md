@@ -57,7 +57,6 @@ var opt = {
   height: 200,
   accept: ".xls,.xlsx",
   handler: obj.dlgfunc,
-  //autoFree: true, //關閉時釋放
 }
 dlgUpload = createDlgImport(opt);
 
@@ -73,6 +72,9 @@ dlgUpload.destroy();
 
 //取得上傳檔案
 dlgUpload.getFiles();
+
+//清除上傳檔案
+dlgUpload.clear();
 ```
 
 > 參數說明
@@ -85,7 +87,8 @@ dlgUpload.getFiles();
 >   * height - 視窗高度
 >   * accept - 限制所選的檔案副檔名，用逗號隔開
 >   * handler - 匯入檔案後所執行的程式
->   * multiple - 多個檔案
+>   * autoFree - 關閉對話框時，自動釋放
+>   * multiple - 多個檔案(預設false)
 
 > dlgfunc 創建
 
