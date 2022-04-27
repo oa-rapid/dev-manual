@@ -57,11 +57,22 @@ var opt = {
   height: 200,
   accept: ".xls,.xlsx",
   handler: obj.dlgfunc,
+  //autoFree: true, //關閉時釋放
 }
 dlgUpload = createDlgImport(opt);
 
-//開啟匯入畫面
-dlgUpload.dialog('open');
+//開啟對話框
+dlgUpload.open();
+
+//關閉對話框
+dlgUpload.close();
+
+//釋放對話框
+dlgUpload.destroy();
+//如果 繼承FormCtrl6 關閉表單時，會自動釋放
+
+//取得上傳檔案
+dlgUpload.getFiles();
 ```
 
 > 參數說明
@@ -74,6 +85,7 @@ dlgUpload.dialog('open');
 >   * height - 視窗高度
 >   * accept - 限制所選的檔案副檔名，用逗號隔開
 >   * handler - 匯入檔案後所執行的程式
+>   * multiple - 多個檔案
 
 > dlgfunc 創建
 
@@ -101,7 +113,7 @@ i18nTag('{蘋果}{書本}')
 > * str - 輸入要翻譯的文字並用{}包起來做個別翻譯
 
 ### openWinReport(params)
-略 
+略
 
 ### openFormById(id, isModal, params)
 
@@ -364,16 +376,16 @@ strToDate('20220101')
 略
 
 ### setCalendarToday()
-略 
+略
 
 ### getServerCDate(fmt)
-略 
+略
 
 ### getServerTime(fmt)
-略 
+略
 
 ### getServerDate(fmt, act, opts)
-略 
+略
 
 ## ajax
 
