@@ -14,6 +14,7 @@
   - [my.func.js](js/my.func.js.md)
   - [程式碼片段](js/code.md)
 - [APP開發](app/README.md)
+  - [線上更新](app/upgrade.md)
 - [後端開發](php/README.md)
   - [PHP目錄及單元](php/php-mu-lu-ji-dan-yuan.md)
   - [MyFunc.php](php/myfunc.php.md)
