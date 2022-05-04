@@ -1,133 +1,136 @@
-# 自定函數 
+# 自定函數
 
 ## 時間
 
-### addDay(dt, qty)
+### oa_addDay(dt, qty)
 時間加一天
 
 > 範例:
 
 ```sql
-addDay('20220101', '10')
+oa_addDay('20220101', '10')
 ```
 
 >結果: 20220111
 
-### addMonth(dt, qty)
+### oa_addMonth(dt, qty)
 時間加一個月
 
 > 範例:
 
 ```sql
-addMonth('20220101', '2')
+oa_addMonth('20220101', '2')
 ```
 
 >結果: 20220301
 
-### addYear(dt, qty)
+### oa_addYear(dt, qty)
 時間加一年
 
 > 範例:
 
 ```sql
-addYear('20220101', '1')
+oa_addYear('20220101', '1')
 ```
 
 >結果: 20230101
 
-### getWeekna(dt)
+### oa_getWeekna(dt)
 星期幾
 
 > 範例:
 
 ```sql
-getWeekna('20220101')
+oa_getWeekna('20220101')
 ```
 
 > 結果: 六
 
-### getWeekno(dt)
+### oa_getWeekno(dt)
 星期幾
 
 > 範例:
 
 ```sql
-getWeekno('20220101')
+oa_getWeekno('20220101')
 ```
 
 > 結果: 6
 
-### ServerDt()
+### oa_ServerDt()
 server 的日期
 
 ```sql
-ServerDt()
+oa_ServerDt()
 ```
 
 > 結果: 20220101
 
-### ServerDtm()
+### oa_ServerDtm()
 server 的日期時間
 
 ```sql
-ServerDtm()
+oa_ServerDtm()
 ```
 
 > 結果: 20220101201005
 
 ?> 代表 2022/01/01 20:10:05
 
-### ServerTm()
+### oa_ServerTm()
 server 的時間
 
 ```sql
-ServerTm()
+oa_ServerTm()
 ```
 
 > 結果: 201005
 
 ?> 代表 20:10:05
 
-### ServerYm()
+### oa_ServerYm()
 server 的年月
 
 ```sql
-ServerYm()
+oa_ServerYm()
 ```
 
 > 結果: 202201
 
 ## 格式化
 
-### formatDateStr(dt)
+### oa_formatDateStr(dt)
+
 日期格式化
 
 > 範例:
 
 ```sql
-formatDateStr('20220101')
+oa_formatDateStr('20220101')
 ```
 
 >結果: 2022/01/01
 
-### formatDateStr2(dt, dv)
+
+### oa_formatDateStr2(dt, dv)
 日期格式化
 
 > 範例:
 
 ```sql
-formatDateStr2('20220101','-')
+oa_formatDateStr2('20220101','-')
 ```
 
 >結果: 2022-01-01
 
-### formatDateTimeStr(dtm)
+
+### oa_formatDateTimeStr(dtm)
 將日期轉化成 DateTime 格式
 
 > 範例一:
 
 ```sql
-formatDateTimeStr('20220101201005')
+oa_formatDateTimeStr('20220101201005')
 ```
 
 > 結果一: 2022/01/01 20:10:05
@@ -135,18 +138,18 @@ formatDateTimeStr('20220101201005')
 > 範例二:
 
 ```sql
-formatDateTimeStr('20220101')
+oa_formatDateTimeStr('20220101')
 ```
 
 > 結果二: 2022/01/01 00:00:00
 
-### formatTimeStr(tm)
+### oa_formatTimeStr(tm)
 將時間格式化
 
 > 範例一:
 
 ```sql
-formatTimeStr('201005')
+oa_formatTimeStr('201005')
 ```
 
 > 結果一: 20:10:05
@@ -154,7 +157,7 @@ formatTimeStr('201005')
 > 範例二:
 
 ```sql
-formatTimeStr('2010')
+oa_formatTimeStr('2010')
 ```
 
 > 結果二: 20:10
@@ -164,7 +167,7 @@ formatTimeStr('2010')
 轉換成中文錢幣敘述
 
 ```sql
-chnum('500')
+oa_chnum('500')
 ```
 
 > 結果: 伍佰圓整
@@ -173,7 +176,7 @@ chnum('500')
 用字軌取得 進/銷貨比 異動比值
 
 ```sql
-getAcc_pn('22')
+oa_getAcc_pn('22')
 ```
 
 > 結果: 1
@@ -181,13 +184,13 @@ getAcc_pn('22')
 ### X getInv_pn(para)
 用字軌取得 存貨比 異動比值
 
-### getAge(birth, prision)
+### oa_getAge(birth, prision)
 計算年齡
 
 > 範例一:
 
 ```sql
-getAge('500101', '1')
+oa_getAge('500101', '1')
 ```
 
 > 結果一: 61.10
@@ -195,63 +198,63 @@ getAge('500101', '1')
 > 範例二:
 
 ```sql
-getAge('500101', '2')
+oa_getAge('500101', '2')
 ```
 
 > 結果二: 61.18
 
-### getCodena(codeno, fieldname)
+### oa_getCodena(codeno, fieldname)
 參考代碼(系統) 資料
 
 > 範例:
 
 ```sql
-getCodena('Y', 'select_yn')
+oa_getCodena('Y', 'select_yn')
 ```
 
 > 結果: 是
 
-### getMonqty(dt)
+### oa_getMonqty(dt)
 取得月份最大天數
 
 > 範例:
 
 ```sql
-getMonqty('202201')
+oa_getMonqty('202201')
 ```
 > 結果: 31
 
-### getMonqty2(dt)
+### oa_getMonqty2(dt)
 計算年齡(月)
 
 > 範例:
 
 ```sql
-getMonqty2('19500101')
+oa_getMonqty2('19500101')
 ```
 
 > 結果: 865.00
 
-### getStusna(stus)
+### oa_getStusna(stus)
 取得狀態名稱
 
-### X getTypena(codno, typno)
+### oa_getTypena(codno, typno)
 取得分類名稱
 
 ### X getTypenas(codno, typno)
 取得分類名稱串列
 
-### halfHr(H)
+### oa_halfHr(H)
 取半小時
 
-### int05(num)
+### oa_int05(num)
 四捨五入取0.5
 
-### split(str, delim, pos)
+### oa_split(str, delim, pos)
 分割字串
 
-### tranCaption(caption, lang)
+### oa_tranCaption(caption, lang)
 多國語言翻譯
 
-### trim0(num)
+### oa_trim0(num)
 把小數點以後的 0 結掉
