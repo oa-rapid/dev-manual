@@ -419,7 +419,10 @@ ajaxGet($g['ref_data_url'] + '?_refno=quad2', {}, function (ref_data) {
       //con (refCtrl.selectRows)
     };
 
-    refCtrl.clickIconButton();
+    refCtrl.open();
+    //或用
+    // refCtrl.clickIconButton();
+
   }
 });
 ```
