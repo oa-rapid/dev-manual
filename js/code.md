@@ -369,6 +369,21 @@ menuidIsAuth(menuid, function (res) {
 objM.addToolButton('btnId', '按鈕', 'icon-print', obj.print7Click);
 ```
 
+### 工具按鈕 enable 控制
+
+```javascript
+this.fnAfterScroll = (res) => {
+  if (!objM.tabEdit) return;
+
+  objM.setLinkButton('btnId', !checkStus(objM.getInputValue('stus'), 'V'));
+  //或
+  objM.setLinkButton({
+    btn: 'btnId',
+    enabled: !checkStus(objM.getInputValue('stus'), 'V'),
+  });
+}
+```
+
 ### 新增下拉功能表按鈕
 
 ```javascript
@@ -380,6 +395,23 @@ objM.addMenuButton('btnId2', '按鈕1', 'icon-print', () => {
 ```
 
 >[!tip] objM.addMenuButton 會自動依附在 objM.addToolButton
+
+### 下拉按鈕 enable 控制
+
+```javascript
+this.fnAfterScroll = (res) => {
+  if (!objM.tabEdit) return;
+
+  // setBtnMenuItem = ({ menuBtn, menuItem, enabled = false })
+  _.each(['btnId2','btnId3','btnId4','btnId5'], (b) =>{
+    objM.setBtnMenuItem({
+      menuBtn: 'btnId',
+      menuItem: b,
+      enabled: !checkStus(objM.getInputValue('stus'), 'V'),
+    });
+  });
+}
+```
 
 ## 參考查詢
 
@@ -596,3 +628,4 @@ this.goto = function(val) {
   if (menuid) openFormById(menuid, false, param);
 }
 ```
+
