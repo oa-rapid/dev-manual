@@ -375,12 +375,8 @@ objM.addToolButton('btnId', '按鈕', 'icon-print', obj.print7Click);
 this.fnAfterScroll = (res) => {
   if (!objM.tabEdit) return;
 
-  objM.setLinkButton('btnId', !checkStus(objM.getInputValue('stus'), 'V'));
-  //或
-  objM.setLinkButton({
-    btn: 'btnId',
-    enabled: !checkStus(objM.getInputValue('stus'), 'V'),
-  });
+  objM.setButtonEnable('btnId', !checkStus(objM.getInputValue('stus'), 'V'));
+
 }
 ```
 
