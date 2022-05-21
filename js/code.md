@@ -426,6 +426,7 @@ this.fnAfterScroll = function(e) {
   //根據用戶帳號切換
   var fuserid = objM.getInputValue('fuserid');
   var val = fuserid==$g.login_user.userid ? 1 : -1;
+  //第三個參數 true 強制重設按鈕控制
   objM.markBtnCtrl('btnModify', val, true);
 }
 ```
