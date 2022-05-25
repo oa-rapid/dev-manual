@@ -363,6 +363,7 @@ menuidIsAuth(menuid, function (res) {
 ```
 
 ## setToolbar
+
 ### 在工具列新增按鈕
 
 ```javascript
@@ -519,7 +520,9 @@ ajaxGet(url, params,
 ```
 >[!tip] 成功時執行code1，失敗時執行code2
 
-## this.fnAfterScroll(res)
+## FormCtrl6 的方法
+
+### this.fnAfterScroll(res)
 刷新Master(按刷新鈕 或 儲存)
 Master View 移動
 
@@ -531,7 +534,7 @@ this.fnAfterScroll = function(res) {
 
 >[!tip] res 的資料 是透過 撰寫 [menuid]Event.php 裡的 function afterScroll 回傳的資料
 
-## this.fnBeforePost(callback)
+### this.fnBeforePost(callback)
 
 儲存前
 
@@ -546,7 +549,7 @@ this.fnBeforePost = function(callback) {
 > * callback - 這是一個 function
 > 最後要回傳 callback 來決定時否確定要儲存
 
-## this.fnAfterPost()
+### this.fnAfterPost()
 
 儲存後
 
@@ -556,14 +559,14 @@ this.fnAfterPost = function() {
 }
 ```
 
-## objM.setInputValue(String|Element field, val)
+### objM.setInputValue(String|Element field, val)
 更改Master Edit 資料
 
 ```javascript
 objM.setInputValue("rem","文字更改");
 ```
 
-## objM.getInputValue()
+### objM.getInputValue(String field)
 取得Master Edit 資料
 
 ```javascript
@@ -647,3 +650,43 @@ this.goto = function(val) {
 }
 ```
 
+## 表單快速樣式
+
+>[!tip] 必須有相關欄位以供判斷，相關欄位可以隱藏
+
+### objM.formatStusna
+
+> 狀態轉換成說明文字
+
+```html
+<th data-options="field:'stus',width:60,hidden:true"><span data-i18n='狀態'></span></th>
+<th data-options="field:'stus_ref',width:60,userFormatter:'formatStusna'"><span data-i18n='狀態'></span></th>
+```
+
+### objM.formatStusv
+
+> 單據作廢呈灰色
+
+```html
+<th data-options="field:'invono2',width:100,userFormatter:'formatStusv'"><span data-i18n='發票號碼'></span></th>
+<th data-options="field:'stus',width:60,hidden:true"><span data-i18n='狀態'></span></th>
+```
+
+### objM.formatStop_y
+
+> 停用呈灰色
+
+```html
+<th data-options="field:'empna',width:140,userFormatter:'formatStop_y'"><span data-i18n='員工姓名'></span></th>
+<th data-options="field:'stop_y',width:60,hidden:true"><span data-i18n='停用'></span></th>
+```
+
+### objM.formatCommas
+
+> 數字樣式
+
+```html
+<th data-options="field:'saleamt',width:140,userFormatter:'formatCommas'"><span data-i18n='金額'></span></th>
+```
+
+## end
