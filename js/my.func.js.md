@@ -262,6 +262,7 @@ msgBoxp('{時間} / {文字}', opt, (r, r2) => {
 >   * name - 請放當前表單名稱
 >   * title - 彈出畫面的文字敘述
 >   * iconCls - 圖示
+>   * required: false - 可以空白 (預設不可空白)
 
 ![](../images/js/my.func.js/msgBoxp.png)
 
