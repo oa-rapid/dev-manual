@@ -1,4 +1,4 @@
-# 版型
+# 表單版型
 
 ### 表單配置一
 
@@ -341,7 +341,7 @@ useage: master detail
 >
 > * reffilter - 預帶資料
 > * refset - 抓取資料
->   * refset - 來源欄位 
+>   * refset - 來源欄位
 >   * keyfld - 對應欄位
 >   * retfld - 取回欄位
 
@@ -393,7 +393,7 @@ useage: master detail
 >
 > * reffilter - 預帶資料
 > * refset - 抓取資料
->   * refset - 來源欄位 
+>   * refset - 來源欄位
 >   * keyfld - 對應欄位
 >   * retfld - 取回欄位
 
