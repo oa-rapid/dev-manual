@@ -239,6 +239,14 @@ objM.setViewRow(row,3)
 
 > 更改第4筆的 Master View 資料
 
+### objM.refreshView()
+
+```javascript
+objM.refreshView()
+```
+
+> 將 Master View 刷新
+
 ## Master Edit 操作
 
 ### objM.getInput(String field)
