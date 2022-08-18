@@ -698,6 +698,16 @@ objD.getRows(0)
 ]
 ```
 
+### objD.getSelections(idxGrd)
+
+取得detail所選資料
+
+```javascript
+objD.getSelections(1)
+```
+
+> 取得第1分頁 所選資料
+
 ### objD.updateRow(idxGrd, idxRow, Object row)
 
 單一筆資料部分修改
