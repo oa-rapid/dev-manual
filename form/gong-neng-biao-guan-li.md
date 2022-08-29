@@ -101,7 +101,7 @@
 > * btnStusFilter=\[stus] 設定 master Edit 裡 狀態(stus) 欄位，可以有哪些參數。
 >
 > ![](../images/form/功能表管理/主畫面-參數-btnStusFilter.png)
-> * btnDelectCtrl=\[stus] 關閉工具列的"刪除"按鍵
+> * btnDeleteCtrl=\[stus] 關閉工具列的"刪除"按鍵
 > * btnModifyCtrl=\[stus] 關閉工具列的"編輯"按鍵
 > * disableGrd=\[num] 設定Detail Grid唯讀 多個Detail Grid用逗號分隔
 >   * 範例 disableGrd=0,1
