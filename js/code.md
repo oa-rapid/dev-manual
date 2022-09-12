@@ -575,25 +575,9 @@ objM.getInputValue("rem");
 
 ## detail 開啟(連結)到不同表單
 
-html 使用 userFormatter
-
-```html
-<tr>
-  <th data-options="field:'ordno',width:128,userFormatter:'linkto'"><span data-i18n='採購單編號(PO#)'></span></th>
-  ...
-```
-
-再寫 js code
+寫 js code
 
 ```javascript
-this.linkto = function(val, row, idx) {
-  if(isEmpty(row) || !val) return;
-
-  var span = `<span class="cell-ordno" style="cursor:pointer">${val}</span>`;
-  return span;
-}
-
-
 //init bind grid cell
 this.init = function() {
   //...
@@ -601,7 +585,6 @@ this.init = function() {
   objD.bindGridCell({
     idxGrd: 0,
     field: 'ordno',
-    // class: 'cell-ordno',
     //可bind 多個 event
     events:[{
       event: 'dblclick',
