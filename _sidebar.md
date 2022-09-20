@@ -10,6 +10,8 @@
   - [表單語法片段](form/code.md)
   - [功能表參數](form/itemparam.md)
   - [JS 開發文件](js/js-kai-fa-wen-jian.md)
+  - [my.FormCtrl6.js](js/my.form-ctrl6.js.md)
+  - [my.UserCtrl.js](js/my.user-ctrl.js.md)
   - [my.func.js](js/my.func.js.md)
   - [程式碼片段](js/code.md)
 - [後端開發](php/README.md)
