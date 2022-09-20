@@ -9,7 +9,6 @@
   - [庫存過帳設定](form/ku-cun-guo-zhang-she-ding.md)
   - [表單語法片段](form/code.md)
   - [功能表參數](form/itemparam.md)
-  - [JS 開發文件](js/js-kai-fa-wen-jian.md)
   - [my.FormCtrl6.js](js/my.form-ctrl6.js.md)
   - [my.UserCtrl.js](js/my.user-ctrl.js.md)
   - [my.func.js](js/my.func.js.md)
