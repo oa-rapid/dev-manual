@@ -88,3 +88,13 @@ this.fnModelChange = (field, value) => {
     objM.setInputValue('usd_saleamt', formatCommas(myRound(usd_costprc*saleqty,2)));
   }
 ```
+
+### 計算欄位(數字欄位格式)
+
+> 使用 number 屬性，可設定計算欄位，設定成數字欄位，可以搭配 caculate 使用
+
+範例
+
+```html
+  <input name="totsalear" class="w100" caculate number>
+```
