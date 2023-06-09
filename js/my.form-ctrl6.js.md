@@ -36,6 +36,27 @@ function FormCtrl6C(objM, objD){
 >
 > objD - Detail controller 使用 objD.method 呼叫&#x20;
 
+## 初始設定
+
+### this.init()
+_範例一_
+
+```javascript
+  this.init = function() {
+    objM.copyEmpty['mas'] = [];               // 複製時       Master 要刪除資料的欄位
+    objM.copyEmpty['det'] = ['rem','rem2'];   // 複製時 第0個 Detail 要刪除資料的欄位
+    objM.copyEmpty['det1'] = ['rem','rem2'];  // 複製時 第1個 Detail 要刪除資料的欄位
+    objM.copyEmpty['det2'] = ['rem','rem2'];  // 複製時 第2個 Detail 要刪除資料的欄位
+    
+  }
+```
+
+> 說明
+> * objM.copyEmpty 設定 複製時需要刪除的欄位
+>   * objM.copyEmpty['mas']      複製時       Master 要刪除資料的欄位
+>   * objM.copyEmpty['det']      複製時 第0個 Detail 要刪除資料的欄位
+>   * objM.copyEmpty['det{n}']   複製時 第n個 Detail 要刪除資料的欄位
+
 ## Router _取得api路徑_
 
 ### objM.getapi(route, \[path])
