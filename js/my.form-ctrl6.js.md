@@ -1077,6 +1077,24 @@ this.linkto = function(val, row, idx) {
 }
 ```
 
+### objM.partModify(param)
+
+進入編輯模式，並且只有指定欄位開啟編輯
+
+> Master Edit 填入欄位名稱 用 array 的方式
+> Detail 依照 順序 
+>  * Table 0,1,2...
+>  * 代表 det,det1,det2
+
+範例
+```javascript
+  objM.partModify({
+    mas: 'facordno,rem',
+    det: ['crncy'],
+    det5: ['accno']
+  })
+```
+
 ## detail 開啟(連結)到不同表單
 
 寫 js code
