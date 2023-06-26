@@ -139,6 +139,31 @@ openFormById(menuid, modal, params);
 > * qryval - 搜尋值
 > * params - 用 | 整理qryfld,qryval成一個參數
 
+### openFormByRepId(repno, isModal, params)
+
+表單開啟及追隨
+
+```javascript
+var repno = 'REP030070';
+var modal = false;
+var params = {
+  query: true,
+  keyval: {
+    dlvno: objM.getInputValue('dlvno'),
+    item: row ? row.item : '',
+  },
+};
+openFormByRepId(repno, modal, params)
+```
+
+> 參數說明
+>
+> * repno - 報表ID
+> * modal - 是否用彈出視窗開啟
+> * params 
+>   * query - 開啟報表時 要不要順便查詢
+>   * keyval - 用 Object 來指定 傳入查詢的資料
+
 ## 對話框
 
 ![](../images/js/my.func.js/Progress.png)
