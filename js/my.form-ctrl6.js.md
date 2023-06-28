@@ -1041,7 +1041,8 @@ this.fnOnSetEditRow = function(idxGrd, row){
 
 ```javascript
 this.fnDetailModelChange = (field, value) => {
-    //code...
+  var idxGrd = objD.getSelectGrdIndex()
+  //code...
 }
 ```
 
