@@ -8,7 +8,7 @@
 
 ![](../images/start/proxy/目錄.png)
 
-> 啟動 start.bat
+## 啟動 start.bat
 
 ![](../images/start/proxy/啟動Proxy.png)
 
