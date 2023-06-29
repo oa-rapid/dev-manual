@@ -2,7 +2,29 @@
 
 ## 參考查詢
 
-### 參考回傳
+Master 範例
+
+> 對應的欄位敘述 請往下看
+
+```html
+<input name="cusno" class="w100" reffilter="cusno" refret="salesman;salesman2">
+```
+
+Detail 範例
+
+> 對應的欄位敘述 請往下看
+
+```html
+<th data-options="
+  field:'dlvno',
+  width:140,
+  reffilter:'facno=fomMaster0.facno;salesman;',
+  refret:'baltrn;payamt;postamt;pdamt=unpayamt',
+  refmulti:true,
+  sumfld:'unpayamt'">
+```
+
+### 參考回傳(refret)
 
 > refret 回傳參考視窗其他欄位 \
 > refret="field;field2" \
@@ -19,7 +41,7 @@ Detail
 <th data-options="refret:'salesman;salesman2'">
 ```
 
-### 欄位預篩
+### 欄位預篩(reffilter)
 
 > reffilter 預篩參考條件 \
 > reffilter="field"
