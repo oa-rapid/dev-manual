@@ -8,7 +8,7 @@
 ### Editor:Insert Space
 > 設定: true
 
-### Detect Intentation
+### Detect Indentation
 > 設定: false
 
 ## 模組
