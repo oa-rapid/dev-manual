@@ -19,6 +19,9 @@ MasterDelete=N
 
 隱藏複製
 MasterCopy=N
+
+取消 key 的特殊文字輸入
+keyFieldRegex=N
 ```
 
 
