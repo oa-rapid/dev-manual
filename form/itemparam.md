@@ -22,6 +22,9 @@ MasterCopy=N
 
 取消 key 的特殊文字輸入
 keyFieldRegex=N
+
+將 tab 隱藏
+hidetab=tab英文標籤
 ```
 
 
