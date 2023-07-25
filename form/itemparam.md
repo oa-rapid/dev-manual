@@ -19,14 +19,7 @@ MasterDelete=N
 
 隱藏複製
 MasterCopy=N
-
-取消 key 的特殊文字輸入
-keyFieldRegex=N
-
-將 tab 隱藏
-hidetab=tab英文標籤
 ```
-
 
 ### 按鈕名稱
 
@@ -79,3 +72,48 @@ repno=REP010010
 ```
 
 > [!tip] 複雜的列印控制請使用js plugin
+>
+
+### 取消 key 的特殊文字輸入
+PK 在表單輸入時 可以消 底層限制的 mask
+
+```
+keyFieldRegex=N
+```
+
+### 將 tab 隱藏
+將 detail 的 特定 頁籤關閉
+
+```
+hidetab=tab英文標籤
+```
+
+## 將 detail 的 右鍵功能設定
+
+> 多個Detail Grid用逗號分隔
+
+### 設定Detail Grid唯讀 
+
+```
+disableGrd=0
+
+disableGrd=0,1
+```
+
+### 設定Detail Grid 不能新增
+
+```
+disableGrdAppend=0
+```
+
+### 設定Detail Grid 不能編輯
+
+```
+disableGrdModify=0
+```
+
+### 設定Detail Grid 不能刪除
+
+```
+disableGrdRemove=0
+```
