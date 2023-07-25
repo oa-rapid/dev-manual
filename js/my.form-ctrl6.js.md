@@ -1043,6 +1043,8 @@ this.fnOnSetEditRow = function(idxGrd, row){
 this.fnDetailModelChange = (field, value) => {
   var masrow = objM.getMasterData();
   var idxGrd = objD.getSelectGrdIndex()
+  var rowidx = objD.getSelectIndex(idxGrd);
+  var row = objD.getRow(idxGrd)
   //code...
 }
 ```
