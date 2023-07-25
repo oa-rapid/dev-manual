@@ -520,4 +520,10 @@ ajaxGet(url, params,
 ```
 >[!tip] 成功時執行code1，失敗時執行code2
 
+## 重新查詢
 
+```js
+objM.query(function() {
+  objM.saveClick();
+});
+```
