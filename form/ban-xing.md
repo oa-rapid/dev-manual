@@ -308,6 +308,17 @@ useage: master detail
             <input refset="reffld:'upduserid',keyfld:'userid',retfld:'username'" class="w124">
           </td>
         </tr>
+        <tr>
+          <td><label for="crtdtm"><span data-i18n='建立時間'></span></label></td>
+          <td>
+            <input name="crtdtm" class="w206">
+          </td>
+          <td>&nbsp;&nbsp;</td>
+          <td><label for="upddtm"><span data-i18n='異動時間'></span></label></td>
+          <td>
+            <input name="upddtm" class="w206">
+          </td>
+        </tr>
       </table>
     </form>
   </div>
