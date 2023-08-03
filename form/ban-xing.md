@@ -269,29 +269,28 @@ useage: master detail
 ```html
 <div id="tabEdit" class="easyui-tabs" data-options="fit:true">
   <div title="<span data-i18n='主資料'></span>" style="padding:10px">
-      <form fom-master>
-        <table>
-          <tr>
-            <td>
-              <label for="{field_name}">
-                <span data-i18n="{標籤}"></span>
-              </label>
-            </td>
-            <td>
-              <input name="{field_name}" class="w230">
-            </td>
-            <td>&nbsp;</td>
-            <td>
-              <label for="{field_name}"><span data-i18n="{標籤}"></span></label>
-            </td>
-            <td>
-              <input name="{field_name}" class="w70">
-              <input refset="reffld:'',keyfld:'',retfld:''" class="w108">
-            </td>
-          </tr>
-        </table>
-      </form>
-    </div>
+    <form fom-master>
+      <table>
+        <tr>
+          <td>
+            <label for="{field_name}">
+              <span data-i18n="{標籤}"></span>
+            </label>
+          </td>
+          <td>
+            <input name="{field_name}" class="w230">
+          </td>
+          <td>&nbsp;</td>
+          <td>
+            <label for="{field_name}"><span data-i18n="{標籤}"></span></label>
+          </td>
+          <td>
+            <input name="{field_name}" class="w70">
+            <input refset="reffld:'',keyfld:'',retfld:''" class="w108">
+          </td>
+        </tr>
+      </table>
+    </form>
   </div>
   <div title="<span data-i18n='其他'></span>" style="padding:10px">
     <form fom-master>
