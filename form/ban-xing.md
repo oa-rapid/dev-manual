@@ -24,28 +24,25 @@ useage: mater only | master detail
   <div data-options="region:'center',broder:false" style="background: #fff; border: 0;">
     <div class="easyui-layout" data-options="fit:true">
       <!--Master-->
-      <div data-options="region:'center',border:false" style="height: 200px; background: #fff;">
-        <div id="tabEdit" class="easyui-tabs" data-options="fit:true">
-          <div title="<span data-i18n='主資料'></span>" style="padding: 10px;">
-            <form fom-master>
-              <!--Master Edit code-->
-            </form>
-          </div>
+      <div id="tabEdit" class="easyui-tabs" data-options="fit:true">
+        <div title="<span data-i18n='主資料'></span>" style="padding: 10px;">
+          <form fom-master>
+            <!--Master Edit code-->
+          </form>
+        </div>
 
-          <div title="<span data-i18n='明細'>">
-            <table grd-detail>
-              <!--Detail grid code-->
-            </table>
-          </div>
+        <div title="<span data-i18n='明細'>">
+          <table grd-detail>
+            <!--Detail grid code-->
+          </table>
+        </div>
 
-          <div title="<span data-i18n='其他'></span>" style="padding: 10px;">
-            <form fom-master>
-              <!--Master Edit code-->
-            </form>
-          </div>
+        <div title="<span data-i18n='其他'></span>" style="padding: 10px;">
+          <form fom-master>
+            <!--Master Edit code-->
+          </form>
         </div>
       </div>
-
       <!--End of Master-->
     </div>
   </div>
