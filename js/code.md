@@ -414,19 +414,19 @@ this.fnAfterScroll = (res) => {
 
 >[!tip] 使用 objM.markBtnCtrl 可優先取的修改按鈕控制，避免按鈕因狀態切換閃爍
 
->objM.markBtnCtrl('按鈕名稱', 參數：-1 disabled, 1：enabled, 0：不控制);
+>objM.markBtnCtrl('按鈕名稱', 參數：0 disabled, 1：enabled);
 
 ```js
 this.init = function () {
   tabEdit = objM.tabEdit;
   //初始化設定為false
-  objM.markBtnCtrl('btnModify', -1);
+  objM.markBtnCtrl('btnModify', 0);
 }
 
 this.fnAfterScroll = function(e) {
   //根據用戶帳號切換
   var fuserid = objM.getInputValue('fuserid');
-  var val = fuserid==$g.login_user.userid ? 1 : -1;
+  var val = fuserid==$g.login_user.userid ? 1 : 0;
   //第三個參數 true 強制重設按鈕控制
   objM.markBtnCtrl('btnModify', val, true);
 }
