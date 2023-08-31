@@ -270,11 +270,18 @@ msgBoxy("文字訊息",
 ```javascript
 var opt = {
   inival: '20220101',
+  label: '{時間}',
+  edtwidth: 110,
   mask: '9999/99/99',
   editor: 'datebox',
   inival2: '初始值',
+  label2: '{文字}',
   mask2: '',
+  edtwidth2: 300,
   editor2: 'textbox',
+
+  // 外框寬度
+  width: 350,
 }
 msgBoxp('{時間} / {文字}', opt, (r, r2) => {
 //code
@@ -289,7 +296,7 @@ msgBoxp('{時間} / {文字}', opt, (r, r2) => {
 >   * iconCls - 圖示
 >   * require: false - 可以空白 (預設不可空白)
 
-![](../images/js/my.func.js/msgBoxp.png)
+![](../images/js/my.func.js/msgBoxp2.png)
 
 ## 訊息
 
