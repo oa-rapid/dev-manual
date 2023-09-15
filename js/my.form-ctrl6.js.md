@@ -47,7 +47,7 @@ _範例一_
     objM.copyEmpty['det'] = ['rem','rem2'];   // 複製時 第0個 Detail 要刪除資料的欄位
     objM.copyEmpty['det1'] = ['rem','rem2'];  // 複製時 第1個 Detail 要刪除資料的欄位
     objM.copyEmpty['det2'] = ['rem','rem2'];  // 複製時 第2個 Detail 要刪除資料的欄位
-    
+
   }
 ```
 
@@ -1086,7 +1086,7 @@ this.linkto = function(val, row, idx) {
 進入編輯模式，並且只有指定欄位開啟編輯
 
 > Master Edit 填入欄位名稱 用 array 的方式
-> Detail 依照 順序 
+> Detail 依照 順序
 >  * Table 0,1,2...
 >  * 代表 det,det1,det2
 

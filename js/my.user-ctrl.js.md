@@ -39,3 +39,36 @@
 
 ```
 
+
+## 開啟(連結)到不同表單
+
+寫 js code
+
+```javascript
+//init bind grid cell
+this.init = function() {
+  //...
+
+  objM.bindGridCell({
+    idxGrd: 0,
+    field: 'ordno',
+    //可bind 多個 event
+    events:[{
+      event: 'dblclick',
+      fn: (val, row, idx, cell) => {
+        var menuid, param;
+        if (val.substr(0,2)=='PO') {
+          menuid = 'MAHA030030';
+          param = 'qryfld=ordno|qryval='+val;
+        } else if (val.substr(0,2)=='YS') {
+          menuid = 'MAHA040030';
+          param = 'qryfld=dlvno|qryval='+val;
+        }
+
+        if (menuid) openFormById(menuid, false, param);
+      }
+    }],
+  });
+}
+```
+
