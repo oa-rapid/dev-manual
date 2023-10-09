@@ -267,6 +267,31 @@ msgBoxy("文字訊息",
 
 ### msgBoxp(msg, opt, callback)
 
+以下程式為 新版 用法:
+```javascript
+var option = {
+  width: 350, // 外框寬度
+  editors: [{
+    label: '{製令}',
+    editor: 'textbox',
+    inival: '20220101',
+    mask: '9999/99/99',
+  },{
+    label: '{工序}',
+    editor: 'datebox',
+    inival: '初始值',
+  },{
+    label: '{數量}',
+    editor: 'numberbox',
+    precision: 2, // 小數位數
+  }],
+}
+msgBoxp('{時間} / {文字}', opt, (r, r2, r3) => {
+//code
+})
+```
+
+以下程式為 舊版 用法:
 ```javascript
 var opt = {
   inival: '20220101',
