@@ -270,26 +270,43 @@ msgBoxy("文字訊息",
 以下程式為 新版 用法:
 ```javascript
 var option = {
-  width: 350, // 外框寬度
+  width: 400,
   editors: [{
     label: '{製令}',
     editor: 'textbox',
-    inival: '20220101',
-    mask: '9999/99/99',
+    refno: 'mawno',       // 參考查詢編號
   },{
     label: '{工序}',
-    editor: 'datebox',
-    inival: '初始值',
+    editor: 'textbox',
+    refno: 'mawno-wpno',  // 參考查詢編號
+    width: 132,           // 欄位大小
   },{
     label: '{數量}',
+    editor: 'numberbox',  // 型態
+    precision: 0,         // 小數位數
+    groupSeparator: ',',  // EX : 1234 顯示會變成 1,234
+    width: 132,           // 欄位大小
+  },{
+    label: '{轉換率}',
     editor: 'numberbox',
-    precision: 2, // 小數位數
+    inival: 1,            // 初始值
+    precision: 2,         // 小數位數
+    refno: 'trnrat',      // 參考查詢編號
   }],
 }
-msgBoxp('{時間} / {文字}', opt, (r, r2, r3) => {
+msgBoxp('{時間} / {文字}', opt, (r, r2, r3, r4) => {
 //code
 })
 ```
+> 新版參數說明:
+> * editor: 有以下型態
+>   * textbox
+>   * numberbox
+>   * datebox
+
+圖示:
+
+<img decoding="async" src="../images/js/my.func.js/msgBoxp3.png" width="48%">
 
 以下程式為 舊版 用法:
 ```javascript
