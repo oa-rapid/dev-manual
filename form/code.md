@@ -71,8 +71,14 @@ Detail \
 
 > 使用 formula 屬性，可設定自動計算，在相關欄位 onChange 時觸發
 
+Master
 ```html
 <input name="saleamt" class="w110" formula="expr:'[saleprc]*[saleqty]'">
+```
+
+Detail
+```html
+<th data-options="field:'saleamt',width:100,formula:{expr:'round([saleqty]*[saleprc],[fomMaster0.decim])'}"><span data-i18n='小計'></span></th>
 ```
 
 ### 計算欄位
