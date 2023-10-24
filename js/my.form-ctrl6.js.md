@@ -516,7 +516,7 @@ Master View 刷新時
 
 ```javascript
 this.fnAfterGrdViewLoad = function() {
-    //code
+  //code
 }
 ```
 
@@ -526,7 +526,7 @@ this.fnAfterGrdViewLoad = function() {
 
 ```javascript
 this.fnModelChange = (field, value) => {
-    //code
+  //code
 }
 ```
 
@@ -536,7 +536,7 @@ this.fnModelChange = (field, value) => {
 
 ```javascript
 this.fnStateChange = function() {
-    //code
+  //code
 }
 ```
 
@@ -548,7 +548,17 @@ this.fnStateChange = function() {
 
 ```javascript
 this.fnCancelEdit = function() {
-    //code
+  //code
+}
+```
+
+### this.fnQueryClick()
+
+查詢按鈕按下去時
+
+```javascript
+this.fnQueryClick = function() {
+  //code
 }
 ```
 
@@ -558,7 +568,7 @@ this.fnCancelEdit = function() {
 
 ```javascript
 this.fnOnQuery= function() {
-    //code
+  //code
 }
 ```
 
@@ -927,9 +937,9 @@ this.fnDetailBeforePasteRows = function(idxGrd, new_rows){
 
 ```javascript
 this.fnBeforeDeleteRow = (idxGrd, row) => {
-    //code
-    var success = false;
-    return success;
+  //code
+  var success = false;
+  return success;
 }
 ```
 
@@ -946,9 +956,9 @@ this.fnBeforeDeleteRow = (idxGrd, row) => {
 
 ```javascript
 this.fnBeforeDeleteRows = (idxGrd, rows) => {
-    //code
-    var success = false;
-    return success;
+  //code
+  var success = false;
+  return success;
 }
 ```
 
