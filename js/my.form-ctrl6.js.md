@@ -552,12 +552,12 @@ this.fnCancelEdit = function() {
 }
 ```
 
-### this.fnQueryClick()
+### this.fnSaveClick()
 
 查詢按鈕按下去時
 
 ```javascript
-this.fnQueryClick = function() {
+this.fnSaveClick = function() {
   //code
 }
 ```
