@@ -53,6 +53,21 @@ btnDeleteCtrl=CVA
 btnStusFilter=CV
 ```
 
+### scrollview
+
+設定 grid 是否使用 scrollview
+```
+scrollview=0,1
+```
+
+### changeview
+
+設定 grid 使用 scrollview 時 changeview 預設是 0
+changeview=1 時 編輯時 會取消 scrollview 模式
+```
+changeview=1
+```
+
 ## 其他參數
 
 ### 表單圖片管理
