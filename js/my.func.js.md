@@ -160,7 +160,7 @@ openFormByRepId(repno, modal, params)
 >
 > * repno - 報表ID
 > * modal - 是否用彈出視窗開啟
-> * params 
+> * params
 >   * query - 開啟報表時 要不要順便查詢
 >   * keyval - 用 Object 來指定 傳入查詢的資料
 
@@ -306,7 +306,7 @@ msgBoxp('{時間} / {文字}', opt, (r, r2, r3, r4) => {
 
 圖示:
 
-<img decoding="async" src="../images/js/my.func.js/msgBoxp3.png" width="48%">
+<img decoding="async" src="../images/js/my.func.js/msgBoxp3.jpg" width="48%">
 
 以下程式為 舊版 用法:
 ```javascript
