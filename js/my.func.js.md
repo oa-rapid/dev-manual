@@ -16,6 +16,46 @@
 
 開啟獨佔視窗
 
+_範例_
+
+```javascript
+obj.dlgTest = 'dg-'+getGuid()
+
+let html = `
+  <div id="dlg${objM.name}">
+    <p>內部文字</p>
+  </div>
+`;
+
+let buttons = [{
+  text:i18nTag('{關閉}'),
+  iconCls:'icon-close',
+  handler: function(){
+    obj.win.dialog('close')
+  }
+}];
+
+var param = {
+  title: '視窗',
+  w: 500,
+  h: 300,
+  body: html,
+  border: $g.winBorder,
+  buttons: buttons,
+  modal: false,
+  onClose: function() {
+    // $('#'+obj.dlgTest).treegrid('getPanel').panel('destroy')
+    // objM.loadRemote(true)
+  }
+}
+openWindow(param, function(win) {
+  obj.win = win
+  obj.dlgTestDlg = win.dialog('body') //取得內層 el
+})
+```
+
+![](../images/js/my.func.js/openWindow.png)
+
 ### getApi(route, path)
 
 _範例一_
