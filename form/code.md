@@ -126,3 +126,44 @@ this.fnModelChange = (field, value) => {
 ```html
   <input name="totsalear" class="w100" caculate number>
 ```
+
+## datagrid 樣式
+
+### rowStyler - row樣式
+
+範例：依照條件，設定row顏色
+
+```html
+  <table id="tbl-chd22" grd-select data-options="rowStyler:'styleRow'">
+```
+
+```js
+this.styleRow = function(index, row) {
+  if (in_array(row.trn ,['21','55','32'])){
+    return {class:'red'}
+    // return 'background-color:#6293BB;color:#fff;'; //inline style
+    // return {style: 'background-color:#6293BB;', class:'red'}
+  }
+}
+```
+
+### colStyle - cell樣式
+
+範例：cell背景色
+
+```html
+  <th data-options="field:'org_dbamt',width:110,header:'color:blue',colStyle:'background:#BEEDFF;color:blue'"><span data-i18n='借方原幣金額'></span></th>
+```
+?> tag 為 td
+
+### colCellStyle - cell內容樣式
+
+範例： 內容自動換行
+
+```html
+<table grd-detail data-options="autoRowHeight:true">
+  ...
+  <th data-options="field:'quarem',width:300,colCellStyle:'white-space:pre-line;'"><span data-i18n='問題內容'></span></th>
+  ...
+```
+?> tag 為 td > div
