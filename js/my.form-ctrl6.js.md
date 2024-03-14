@@ -1010,11 +1010,17 @@ Detail Grid 選取多筆完成後觸發
 範例
 
 ```javascript
-this.fnDetailAfterPostRows = (idxGrd, rows) => {
-  var masrow = objM.getMasterData();
-  _.each(rows, (row) => {
-
-  })
+this.fnDetailAfterPostRows = (idxGrd,rows) => {
+  var d_rows = objD.getRows(idxGrd);
+  if (idxGrd === 0) {
+    obj.getSqlDate((dt) => {
+      for (let rowidx = 0; rowidx < rows.length; rowidx++) {
+        const row = rows[rowidx];
+        d_rows[d_rows.length-rows.length+rowidx]['prd_adddate'] = dt;
+      }
+      objD.setRows(0, d_rows);
+    })
+  }
 }
 ```
 
