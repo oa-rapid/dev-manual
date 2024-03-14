@@ -993,24 +993,28 @@ Detail Grid 新增紀錄後觸發
 
 Detail Grid 單筆完成編輯後觸發
 
-### this.fnDetailAfterPostRows(idxGrd)
+範例
+
+```javascript
+this.fnDetailAfterPost = (idxGrd) => {
+  var rows = objD.getRows(idxGrd);
+  var row = rows[rows.length-1];
+  var masrow = objM.getMasterData();
+}
+```
+
+### this.fnDetailAfterPostRows(idxGrd, rows)
 
 Detail Grid 選取多筆完成後觸發
 
 範例
 
 ```javascript
-this.fnDetailAfterPostRows = (idxGrd) => {
-  var rows = objD.getRows(idxGrd);
-  var row = rows[rows.length-1];
+this.fnDetailAfterPostRows = (idxGrd, rows) => {
   var masrow = objM.getMasterData();
-  getDtrnRow('get-qua', {quano: row.quano}, (res) => {
-    // con (res)
-    if (!masrow.salesman && res.salesman) masrow.salesman = res.salesman;
-    if (!masrow.salesman2 && res.salesman2) masrow.salesman2 = res.salesman2;
-    if (!masrow.contno && res.contno) masrow.contno = res.contno;
-    objM.setMasterData(masrow);
-  });
+  _.each(rows, (row) => {
+
+  })
 }
 ```
 
