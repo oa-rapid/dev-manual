@@ -247,6 +247,18 @@ Master 的日期欄位，自動編號使用
 
 > * datebox - 日期選擇器
 > * textarea - 文字編輯器
+>   * 自定義彈出視窗大小
+>     * editor-width - 寬度 
+>     * editor-height - 高度
+>     * 範例
+> ``` html
+> <input 
+>   name="odh_tempinbz" 
+>   class="w800" 
+>   rows="4" 
+>   editor-width="500" 
+>   editor-height="500" >
+> ```
 > * combobox 下拉式選單 注意: 此功能僅限用在參考查詢的欄位只有2列時使用
 > * numberbox - 數字欄位
 > * phpeditor - PHP 語法 編輯器
