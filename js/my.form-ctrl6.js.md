@@ -894,7 +894,7 @@ _範例二_
 
 > 搭配objM.switchButtonChange 可以製作一個方便開關的按鈕
 
-### objD.setColumnEnable(idxGrd, Array/String fields)
+### objD.setColumnEnable(idxGrd, Array/String field)
 
 Detial 設定欄位可以編輯
 
@@ -910,7 +910,12 @@ _範例二_
   objD.setColumnEnable(0, 'bankaccno');
 ```
 
-### objD.setColumnDisable(idxGrd, Array/String fields)
+> 參數說明
+>
+> * idxGrd -  第幾個分頁
+> * fields - 要更改的欄位名稱，可以傳陣列 或 文字進去
+
+### objD.setColumnDisable(idxGrd, Array/String field)
 
 Detial 設定欄位唯獨
 
@@ -926,7 +931,12 @@ _範例二_
   objD.setColumnDisable(0, 'bankaccno');
 ```
 
-### objD.setColumnRequired(idxGrd, Array/String fields, bRequired)
+> 參數說明
+>
+> * idxGrd -  第幾個分頁
+> * fields - 要更改的欄位名稱，可以傳陣列 或 文字進去
+
+### objD.setColumnRequired(idxGrd, Array/String field, bRequired)
 
 Detial 設定欄位是否必填
 
@@ -941,6 +951,12 @@ _範例二_
 ```javascript
   objD.setColumnRequired(0, 'bankaccno', true);
 ```
+
+> 參數說明
+>
+> * idxGrd -  第幾個分頁
+> * field - 要更改的欄位名稱，可以傳陣列 或 文字進去
+> * bRequired - 是否必填 True or False
 
 ## Detail事件
 
@@ -1116,8 +1132,6 @@ this.fnDetailModelChange = (field, value) => {
   //code...
 }
 ```
-
-Detial
 
 ## 其他方法 (method)
 
