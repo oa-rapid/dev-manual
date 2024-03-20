@@ -894,16 +894,6 @@ _範例二_
 
 > 搭配objM.switchButtonChange 可以製作一個方便開關的按鈕
 
-### objD.setColumnEnable(idxGrd, fields)
-
-Detial 設定欄位可以編輯
-
-_範例一_
-
-```javascript
-  objD.setColumnEnable(idxGrd, ['bankaccno', 'checkno', 'checkdt']);
-```
-
 ### objD.setColumnEnable(idxGrd, Array/String fields)
 
 Detial 設定欄位可以編輯
