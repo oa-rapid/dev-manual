@@ -19,14 +19,13 @@
 _範例_
 
 ```javascript
-obj.dlgTest = 'dg-'+getGuid()
-
 let html = `
   <div id="dlg${objM.name}">
     <p>內部文字</p>
   </div>
 `;
 
+// buttons 第一種
 let buttons = [{
   text:i18nTag('{關閉}'),
   iconCls:'icon-close',
@@ -35,6 +34,20 @@ let buttons = [{
   }
 }];
 
+// buttons 第二種
+// var customButtonHtml = `
+// <table cellpadding="0" cellspacing="0" style="width:100%">
+//   <tr>
+//     <td style="text-align:left">
+//       <span data-i18n='自訂下半部分'></span>
+//     </td>
+//     <td style="text-align:right">
+//       <a id="dlg_buttons_success${objM.name}"><span data-i18n='確認'></span></a>
+//       <a id="dlg_buttons_close${objM.name}"><span data-i18n='關閉'></span></a>
+//     </td>
+//   </tr>
+// </table>`;
+
 var param = {
   title: '視窗',
   w: 500,
@@ -42,19 +55,71 @@ var param = {
   body: html,
   border: $g.winBorder,
   buttons: buttons,
+  // buttons: customButtonHtml,
   modal: false,
   onClose: function() {
-    // $('#'+obj.dlgTest).treegrid('getPanel').panel('destroy')
-    // objM.loadRemote(true)
   }
 }
 openWindow(param, function(win) {
   obj.win = win
   obj.dlgTestDlg = win.dialog('body') //取得內層 el
+
+  // buttons 第二種
+  // $(`#dlg_buttons_success${objM.name}`).linkbutton({
+  //   iconCls:'icon-success',
+  //   onClick: function(){
+  //     con('確認')
+  //   }
+  // });
+
+  // $(`#dlg_buttons_close${objM.name}`).linkbutton({
+  //   iconCls:'icon-close',
+  //   onClick: function(){
+  //     obj.win.dialog('close');
+  //   }
+  // });
 })
 ```
 
 ![](../images/js/my.func.js/openWindow.png)
+
+> 參數說明
+>
+> * param - 將所需資訊一次傳入
+>   * title - 視窗的名稱
+>   * w - 寬度
+>   * h - 高度
+>   * body - 內部的 html
+>   * border - 設定 border 樣式
+>   * buttons - 下方工具列
+>     * 第一種 (資料型態 Array)
+>       ``` javascript
+>       let buttons = [{
+>         text:i18nTag('{關閉}'),
+>         iconCls:'icon-close',
+>         handler: function(){
+>           obj.win.dialog('close')
+>         }
+>       }];
+>       ```
+>     * 第二種 (資料型態 String)
+>       ``` javascript
+>       var customButtonHtml = `
+>       <table cellpadding="0" cellspacing="0" style="width:100%">
+>         <tr>
+>           <td style="text-align:left">
+>             <span data-i18n='自訂下半部分'></span>
+>           </td>
+>           <td style="text-align:right">
+>             <a id="dlg_buttons_success${objM.name}"><span data-i18n='確認'></span></a>
+>             <a id="dlg_buttons_close${objM.name}"><span data-i18n='關閉'></span></a>
+>           </td>
+>         </tr>
+>       </table>`;
+>       ```
+>       ![](../images/js/my.func.js/openWindow_buttons_2.png)
+>   * modal - 是否為獨佔視窗
+>   * onClose - 關閉時
 
 ### getApi(route, path)
 
