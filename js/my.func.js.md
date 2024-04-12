@@ -221,7 +221,30 @@ i18nTag('{蘋果}{書本}')
 > * str - 輸入要翻譯的文字並用{}包起來做個別翻譯
 
 ### openWinReport(params)
-略
+
+開啟 Windows 報表工具
+
+```javascript
+var params = {
+  repno: 'BSI015010',
+  tplitem: '010',
+  repmode: 'preview', //preview, print
+  keyval: {
+    quano: objM.getInputValue('quano'),
+  }
+}
+
+openWinReport(params)
+```
+
+> 參數說明
+>
+> * repno - 報表ID
+> * tplitem - 選擇樣板編號
+> * repmode - 選擇列印模式
+>   * preview - 預覽
+>   * print - 直接列印
+> * keyval - 用 Object 來指定 傳入查詢的資料
 
 ### openFormById(id, isModal, params)
 
