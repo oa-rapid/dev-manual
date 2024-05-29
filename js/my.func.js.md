@@ -422,7 +422,7 @@ var option = {
     refno: 'trnrat',      // 參考查詢編號
   }],
 }
-msgBoxp('{時間} / {文字}', opt, (r, r2, r3, r4) => {
+msgBoxp('{時間} / {文字}', option, (r, r2, r3, r4) => {
 //code
 })
 ```
