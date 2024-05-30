@@ -397,6 +397,7 @@ msgBoxy("文字訊息",
 
 以下程式為 新版 用法:
 ```javascript
+let wgno = objM.getInputValue('wgno');
 var option = {
   width: 400,
   editors: [{
@@ -408,6 +409,19 @@ var option = {
     editor: 'textbox',
     refno: 'mawno-wpno',  // 參考查詢編號
     width: 132,           // 欄位大小
+  },{
+    label: '{機台}',
+    editor: 'textbox',
+    refno: 'mach',
+    refret: 'whno=whno',  //回寫欄位
+    reffilter: `machtype_wgno=${wgno}`,   //篩選欄位
+    charcase: 'U',        //大小寫 切換 U:大寫 L:小寫
+  },{
+    field: 'whno',        //給 refret 回寫參考用
+    label: '{倉位}',
+    editor: 'textbox',
+    refno: 'whse',
+    charcase: 'U',
   },{
     label: '{數量}',
     editor: 'numberbox',  // 型態
@@ -422,7 +436,7 @@ var option = {
     refno: 'trnrat',      // 參考查詢編號
   }],
 }
-msgBoxp('{時間} / {文字}', option, (r, r2, r3, r4) => {
+msgBoxp('{時間} / {文字}', option, (mawno, wpno, machno, whno, qty, rat) => {
 //code
 })
 ```
