@@ -239,3 +239,45 @@ myfunc::getAutonumber('20BO', 'chd', '20220101', '', true, $this->ut['dbconn']);
 
 ### myfunc::response($res);
 
+## 異常問題
+
+### 使用foreach($rows as &$row) <- 指標問題看這
+
+> 已知會出問題的版本: php4,php5,php6,php7,php8
+> 
+> 詳情請參考 [php 說明手冊](https://www.php.net/manual/zh/control-structures.foreach.php)
+
+```php
+$arr = [1,2,4];
+
+foreach($arr as &$a) {
+  $a = $a*$a
+}
+
+print_r($arr);  //打印結果 為 1,4,9
+
+//打印結果 為 1,4,4
+foreach($arr as $a) {
+  print_r($a);
+}
+
+```
+
+解決方案
+
+```php
+$arr = [1,2,4];
+
+foreach($arr as &$a) {
+  $a = $a*$a
+}
+unset($a) //取消最後的索引
+
+print_r($arr);  //打印結果 為 1,4,9
+
+//打印結果 為 1,4,9
+foreach($arr as $a) {
+  print_r($a);
+}
+
+```
