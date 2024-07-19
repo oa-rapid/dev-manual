@@ -270,6 +270,22 @@ objM.refreshView()
 
 ## Master Edit 操作
 
+### objM.checkEdit([callback], [errorCallback])
+
+2024.07.19 Brian 擴充 
+> 檢查是否可以編輯
+> 
+> 可以編輯時: 進入編輯模式並執行 callback
+> 
+> 無法編輯時: 顯示無法編輯並執行 errorCallback
+
+```javascript
+objM.checkEdit(()=>{
+  refCtrl.open()
+})
+```
+
+
 ### objM.getInput(String field)
 
 取得 input 欄位物件
@@ -287,10 +303,6 @@ objM.getInputValue('dlvno')
 ```
 
 > 結果: "BO211109002"
-
-
-
-
 
 
 ### objM.setInputReadonly(String fdna, Boolean bReadonly)
