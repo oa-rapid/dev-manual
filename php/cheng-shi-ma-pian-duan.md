@@ -248,7 +248,7 @@ myfunc::getAutonumber('20BO', 'chd', '20220101', '', true, $this->ut['dbconn']);
 > 詳情請參考 [php 說明手冊](https://www.php.net/manual/zh/control-structures.foreach.php)
 
 ```php
-$arr = [1,2,4];
+$arr = [1,2,3];
 
 foreach($arr as &$a) {
   $a = $a*$a
@@ -266,7 +266,7 @@ foreach($arr as $a) {
 解決方案
 
 ```php
-$arr = [1,2,4];
+$arr = [1,2,3];
 
 foreach($arr as &$a) {
   $a = $a*$a
