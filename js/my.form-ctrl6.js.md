@@ -1045,7 +1045,15 @@ this.fnBeforeDeleteRows = (idxGrd, rows) => {
 >
 > 最後要回傳 true | false 如果是 false 就會阻擋 刪除的動作
 
-### ~~this.fnDetailAfterEdit()~~
+### this.fnDetailAfterEdit(idxGrd, editors)
+
+Detail 點擊編輯初始化完成後
+
+```javascript
+this.fnDetailAfterDelete = function(idxGrd, editors){
+  //code
+}
+```
 
 ### this.fnDetailAfterDelete()
 
