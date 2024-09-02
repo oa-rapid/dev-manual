@@ -167,3 +167,15 @@ this.styleRow = function(index, row) {
   ...
 ```
 ?> tag 為 td > div
+
+### aggregate - 聚合欄位 設定(FormCtrl7)
+
+範例： 數量用 sum 加總合計
+
+```html
+  <th data-options="field:'saleqty',width:80,aggregate:'Sum'"><span data-i18n='數量'></span></th>
+```
+
+![](../images/form/表單語法片段/aggregate.png)
+
+?> [參數參考網址](https://developer.mescius.com/wijmo/api/enums/Wijmo.Aggregate.html)
