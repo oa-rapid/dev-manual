@@ -1163,6 +1163,14 @@ this.fnDetailModelChange = (field, value) => {
 var idxGrd = objD.getSelectGrdIndex()
 ```
 
+### objM.loadRemote(forceReload, updView)
+
+畫面更新用程式
+
+> 使用後會根據參數更新局部區域 \
+> forceReload = true    - 更新 Master Edit 區域 \
+> updView = true        - 更新 當前這筆的 Master View
+
 ### objM.bindGridCell(o, e, f, idx)
 
 detail grid cell 事件
