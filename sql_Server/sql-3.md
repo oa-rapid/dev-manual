@@ -163,11 +163,18 @@ oa_formatTimeStr('2010')
 > 結果二: 20:10
 
 ## 其他
-### X chnum(money)
-轉換成中文錢幣敘述
+### X oa_chnum(money)
+轉換成中文錢幣敘述(舊版)
 
 ```sql
 oa_chnum('500')
+```
+
+### chnum(money)
+轉換成中文錢幣敘述
+
+```sql
+chnum('500')
 ```
 
 > 結果: 伍佰圓整
