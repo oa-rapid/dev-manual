@@ -53,6 +53,14 @@ btnDeleteCtrl=CVA
 btnStusFilter=CV
 ```
 
+### iniQuery
+
+進入表單時要不要先查詢
+預設 Y
+```
+iniQuery=N
+```
+
 ### scrollview
 
 設定 grid 是否使用 scrollview
