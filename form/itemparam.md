@@ -83,7 +83,7 @@ changeview=1
 使用圖片/檔案當做附件，附屬於表單資料列鍵值欄位
 
 ```
-btnImgMgr=1|
+btnImgMgr=1|btnImgMgrCapt='更改名稱'
 ```
 
 ### 掛鉤報表
