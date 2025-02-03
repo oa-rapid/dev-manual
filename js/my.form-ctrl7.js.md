@@ -4,6 +4,34 @@
 > 建構中
 >
 
+## Master Edit 操作
+
+### objM.checkEdit([callback], [errorCallback])
+
+> 檢查是否可以編輯
+> 
+> 可以編輯時: 進入編輯模式並執行 callback
+> 
+> 無法編輯時: 顯示無法編輯並執行 errorCallback
+
+```javascript
+objM.checkEdit(() => {
+  // success callback
+  // code...
+}, () => {
+  // error callback 
+  // code...
+})
+```
+
+### objM.getInputValue(String field)
+
+取得 input 欄位 值
+
+```javascript
+objM.getInputValue('dlvno')
+```
+
 ## Detial Data 修改
 
 ### 當detail 被編輯時
