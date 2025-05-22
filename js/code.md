@@ -464,7 +464,13 @@ ajaxGet($g['ref_data_url'] + '?_refno=quad2', {}, function (ref_data) {
       }
     }];
 
-    refCtrl.ini({})
+    let refOpt = {
+      focuspos: 0, // 設定打開參考查詢 focus 在哪個 篩選欄位上面
+      refmulti: false, // true: 多選模式, false: 單選模式
+      refClearFilter: true, // 設定篩選的動作 true: 全部篩選清除, 
+    }
+
+    refCtrl.ini(refOpt)
     //宣告回傳處理函數
     refCtrl.onClose = () => {
       //con (refCtrl.selectRows)

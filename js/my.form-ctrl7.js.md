@@ -3,6 +3,56 @@
 > 第七代表單底層 \
 > 建構中
 >
+### 腳本樣板
+
+```javascript
+//create form control
+createFormCtrl7();
+
+/**
+ * Custom Control
+ */
+function FormCtrl7C(objM, objD){
+  this.name = objM.name;
+  this.objM = objM;
+  this.objD = objD;
+  var obj = this;
+  var tabEdit;
+
+  this.init = function() {
+    tabEdit = objM.tabEdit;
+  }
+
+  this.setToolbar = function() {
+    //
+  }
+}
+```
+
+> obM - Master controller 使用 objM.method 呼叫&#x20;
+>
+> objD - Detail controller 使用 objD.method 呼叫&#x20;
+
+## 初始設定
+
+### this.init()
+_範例一_
+
+```javascript
+  this.init = function() {
+    objM.copyEmpty['mas'] = [];               // 複製時       Master 要刪除資料的欄位
+    objM.copyEmpty['det'] = ['rem','rem2'];   // 複製時 第0個 Detail 要刪除資料的欄位
+    objM.copyEmpty['det1'] = ['rem','rem2'];  // 複製時 第1個 Detail 要刪除資料的欄位
+    objM.copyEmpty['det2'] = ['rem','rem2'];  // 複製時 第2個 Detail 要刪除資料的欄位
+    objM.copyEmpty['det3'] = ['*'] // 當輸入 ['*'] or ['_all_'] 時 複製時刪除所有欄位資料 
+  }
+```
+
+> 說明
+> * objM.copyEmpty 設定 複製時需要刪除的欄位
+>   * objM.copyEmpty['mas']      複製時       Master 要刪除資料的欄位
+>   * objM.copyEmpty['det']      複製時 第0個 Detail 要刪除資料的欄位
+>   * objM.copyEmpty['det{n}']   複製時 第n個 Detail 要刪除資料的欄位 P.S. = ['*'] or ['_all_'] 時 刪除所有欄位
 
 ## Master Edit 操作
 
