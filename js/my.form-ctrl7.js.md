@@ -54,6 +54,22 @@ _範例一_
 >   * objM.copyEmpty['det']      複製時 第0個 Detail 要刪除資料的欄位
 >   * objM.copyEmpty['det{n}']   複製時 第n個 Detail 要刪除資料的欄位 P.S. = ['*'] or ['_all_'] 時 刪除所有欄位
 
+## Master view 操作
+
+### objM.setViewColumnVisible(field, visible)
+
+控制欄位是否顯示
+
+```javascript
+  objM.setViewColumnVisible(field, visible)
+```
+
+> 控制 Master View 欄位是否顯示
+> 參數說明
+>
+> * field - 欄位
+> * visible - true: 顯示, false: 隱藏
+
 ## Master Edit 操作
 
 ### objM.checkEdit([callback], [errorCallback])
