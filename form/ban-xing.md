@@ -264,61 +264,59 @@ useage: master detail
 ### Master Edit
 
 ```html
-<div id="tabEdit" class="easyui-tabs" data-options="fit:true">
-  <div title="<span data-i18n='主資料'></span>" style="padding:10px">
-    <form fom-master>
-      <table>
-        <tr>
-          <td>
-            <label for="{field_name}">
-              <span data-i18n="{標籤}"></span>
-            </label>
-          </td>
-          <td>
-            <input name="{field_name}" class="w230">
-          </td>
-          <td>&nbsp;</td>
-          <td>
-            <label for="{field_name}"><span data-i18n="{標籤}"></span></label>
-          </td>
-          <td>
-            <input name="{field_name}" class="w70">
-            <input refset="reffld:'',keyfld:'',retfld:''" class="w108">
-          </td>
-        </tr>
-      </table>
-    </form>
-  </div>
-  <div title="<span data-i18n='其他'></span>" style="padding:10px">
-    <form fom-master>
-      <table>
-        <tr>
-          <td><label for="crtuserid"><span data-i18n='建立者'></span></label></td>
-          <td>
-            <input name="crtuserid" class="w74">
-            <input refset="reffld:'crtuserid',keyfld:'userid',retfld:'username'" class="w124">
-          </td>
-          <td>&nbsp;&nbsp;</td>
-          <td><label for="upduserid"><span data-i18n='異動者'></span></label></td>
-          <td>
-            <input name="upduserid" class="w74">
-            <input refset="reffld:'upduserid',keyfld:'userid',retfld:'username'" class="w124">
-          </td>
-        </tr>
-        <tr>
-          <td><label for="crtdtm"><span data-i18n='建立時間'></span></label></td>
-          <td>
-            <input name="crtdtm" class="w206">
-          </td>
-          <td>&nbsp;&nbsp;</td>
-          <td><label for="upddtm"><span data-i18n='異動時間'></span></label></td>
-          <td>
-            <input name="upddtm" class="w206">
-          </td>
-        </tr>
-      </table>
-    </form>
-  </div>
+<div title="<span data-i18n='主資料'></span>" style="padding:10px">
+  <form fom-master>
+    <table>
+      <tr>
+        <td>
+          <label for="{field_name}">
+            <span data-i18n="{標籤}"></span>
+          </label>
+        </td>
+        <td>
+          <input name="{field_name}" class="w230">
+        </td>
+        <td>&nbsp;</td>
+        <td>
+          <label for="{field_name}"><span data-i18n="{標籤}"></span></label>
+        </td>
+        <td>
+          <input name="{field_name}" class="w70">
+          <input refset="reffld:'',keyfld:'',retfld:''" class="w108">
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+<div title="<span data-i18n='其他'></span>" style="padding:10px">
+  <form fom-master>
+    <table>
+      <tr>
+        <td><label for="crtuserid"><span data-i18n='建立者'></span></label></td>
+        <td>
+          <input name="crtuserid" class="w74">
+          <input refset="reffld:'crtuserid',keyfld:'userid',retfld:'username'" class="w124">
+        </td>
+        <td>&nbsp;&nbsp;</td>
+        <td><label for="upduserid"><span data-i18n='異動者'></span></label></td>
+        <td>
+          <input name="upduserid" class="w74">
+          <input refset="reffld:'upduserid',keyfld:'userid',retfld:'username'" class="w124">
+        </td>
+      </tr>
+      <tr>
+        <td><label for="crtdtm"><span data-i18n='建立時間'></span></label></td>
+        <td>
+          <input name="crtdtm" class="w206">
+        </td>
+        <td>&nbsp;&nbsp;</td>
+        <td><label for="upddtm"><span data-i18n='異動時間'></span></label></td>
+        <td>
+          <input name="upddtm" class="w206">
+        </td>
+      </tr>
+    </table>
+  </form>
 </div>
 ```
 
@@ -355,26 +353,24 @@ useage: master detail
 ### Detail Grid
 
 ```html
-<div id="pnlDetail" class="easyui-tabs" data-options="fit:true,tabPosition:'bottom'">
-  <div title="<span data-i18n='明細'></span>">
-    <table grd-detail>
-      <thead data-options="frozen:true">
-        <tr>
-          <th data-options="field:'dlvno',width:100,hidden:true"><span data-i18n='單號'></span></th>
-          <th data-options="field:'item',width:100"><span data-i18n='項次'></span></th>
-          <th data-options="field:'prdno',width:100"><span data-i18n='料號'></span></th>
-        </tr>
-      </thead>
-      <thead>
-        <tr>
-          <th data-options="field:'saleqty',width:120"><span data-i18n='數量'></span></th>
-          <th data-options="field:'saleprc',width:120"><span data-i18n='單價'></span></th>
-          <th data-options="field:'saleamt',width:120"><span data-i18n='小計'></span></th>
-          <th data-options="field:'rem',width:120"><span data-i18n='備註'></span></th>
-        </tr>
-      </thead>
-    </table>
-  </div>
+<div title="<span data-i18n='明細'></span>">
+  <table grd-detail>
+    <thead data-options="frozen:true">
+      <tr>
+        <th data-options="field:'dlvno',width:100,hidden:true"><span data-i18n='單號'></span></th>
+        <th data-options="field:'item',width:100"><span data-i18n='項次'></span></th>
+        <th data-options="field:'prdno',width:100"><span data-i18n='料號'></span></th>
+      </tr>
+    </thead>
+    <thead>
+      <tr>
+        <th data-options="field:'saleqty',width:120"><span data-i18n='數量'></span></th>
+        <th data-options="field:'saleprc',width:120"><span data-i18n='單價'></span></th>
+        <th data-options="field:'saleamt',width:120"><span data-i18n='小計'></span></th>
+        <th data-options="field:'rem',width:120"><span data-i18n='備註'></span></th>
+      </tr>
+    </thead>
+  </table>
 </div>
 ```
 
