@@ -1,4 +1,4 @@
-# my.repCtrl3.js
+# my.RepCtrl3.js
 
 > 第三代報表底層 \
 > 建構中
