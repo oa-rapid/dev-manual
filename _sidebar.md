@@ -14,6 +14,7 @@
   - [權限設定](form/permission.md)
   - [my.FormCtrl6.js](js/my.form-ctrl6.js.md)
   - [my.FormCtrl7.js](js/my.form-ctrl7.js.md)
+  - [my.RepCtrl3.js](js/my.rep-ctrl3.js.md)
   - [my.UserCtrl.js](js/my.user-ctrl.js.md)
   - [my.func.js](js/my.func.js.md)
   - [程式碼片段](js/code.md)
