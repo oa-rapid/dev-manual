@@ -9,3 +9,4 @@
 * [待辦設計](todo/README.md)
 * [VS Code 編輯器](vscode_editor/README.md)
 * [File Zilla](filezilla/README.md)
+* [其他](other/README.md)
