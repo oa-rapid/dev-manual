@@ -640,7 +640,7 @@ _範例一_
 objD.getRow()
 ```
 
-> 取得Detial當前分頁及該分頁所選列
+> 取得Detial當前 明細 及該 明細 所選列
 
 _範例二_
 
@@ -648,7 +648,7 @@ _範例二_
 objD.getRow(0)
 ```
 
-> 取得Detial第1分頁及該分頁所選列
+> 取得Detial第1個明細 及該 明細 所選列
 
 _範例三_
 
@@ -656,7 +656,7 @@ _範例三_
 objD.getRow(0,1)
 ```
 
-> 取得Detial第1分頁及該分頁的第2列
+> 取得Detial第1個明細 及該 明細 的第2列
 
 > 取回的資料範例
 
@@ -681,7 +681,7 @@ objD.getRow(0,1)
 
 ### objD.getRows(\[idxGrd])
 
-取得 整個分頁值
+取得 明細資料列 的方法
 
 _範例一_
 
@@ -689,7 +689,7 @@ _範例一_
 objD.getRows()
 ```
 
-> 取得當前分頁的值
+> 取得當前明細資料列
 
 _範例二_
 
@@ -697,7 +697,7 @@ _範例二_
 objD.getRows(0)
 ```
 
-> 取得第1分頁的值
+> 取得 第1個明細 資料列
 
 > 結果
 
@@ -749,7 +749,7 @@ objD.getRows(0)
 objD.getSelections(1)
 ```
 
-> 取得第1分頁 所選資料
+> 取得第1個明細 所選資料
 
 ### objD.updateRow(idxGrd, idxRow, Object row)
 
@@ -762,11 +762,11 @@ var row = {
 objD.updateRow(0,0,row)
 ```
 
-> 更改第1分頁 第1筆 saleqty 資料
+> 更改第1個明細 第1筆 saleqty 資料
 
 ### objD.updateRows(idxGrd, Array rows)
 
-整個分頁資料部分修改
+整個明細資料部分修改
 
 ```javascript
 var rows = [
@@ -786,7 +786,7 @@ var rows = [
 objD.updateRow(0,0,rows)
 ```
 
-> 更改第1分頁 saleqty 資料 注意: 此修改方式請確認要改的列數要一致，避免資料修改錯誤
+> 更改第1個明細 saleqty 資料 注意: 此修改方式請確認要改的列數要一致，避免資料修改錯誤
 
 ### objD.setRow(idxGrd, idxRow, Array rows)
 
@@ -812,11 +812,11 @@ var row = {
 objD.setRow(0,0,row)
 ```
 
-> 直接替換第1分頁 第1筆 資料
+> 直接替換第1個明細 第1筆 資料
 
 ### objD.setRows(idxGrd, Array rows)
 
-整個分頁資料替換
+整個明細資料替換
 
 ```javascript
 var row = [
@@ -859,11 +859,11 @@ var row = [
 objD.setRow(0,row)
 ```
 
-> 直接替換第1分頁 資料
+> 直接替換第1個明細 資料
 
 ### objD.setColumn(idxGrd, Object cols)
 
-更改整個分頁欄位值
+更改整個明細欄位值
 
 ```javascript
 var cols = {
@@ -872,7 +872,7 @@ var cols = {
 objD.setColumn(0,cols)
 ```
 
-> 更改整個分頁 backqty 值
+> 更改整個明細 backqty 值
 
 > 結果
 
@@ -924,7 +924,7 @@ _範例二_
 
 > 參數說明
 >
-> * idxGrd -  第幾個分頁
+> * idxGrd -  第幾個明細
 > * fields - 要更改的欄位名稱，可以傳陣列 或 文字進去
 
 ### objD.setColumnDisable(idxGrd, Array/String field)
@@ -945,7 +945,7 @@ _範例二_
 
 > 參數說明
 >
-> * idxGrd -  第幾個分頁
+> * idxGrd -  第幾個明細
 > * fields - 要更改的欄位名稱，可以傳陣列 或 文字進去
 
 ### objD.setColumnRequired(idxGrd, Array/String field, bRequired)
@@ -966,7 +966,7 @@ _範例二_
 
 > 參數說明
 >
-> * idxGrd -  第幾個分頁
+> * idxGrd -  第幾個明細
 > * field - 要更改的欄位名稱，可以傳陣列 或 文字進去
 > * bRequired - 是否必填 True or False
 
@@ -1002,7 +1002,7 @@ this.fnDetailBeforePasteRows = function(idxGrd, new_rows){
 
 > 參數說明
 >
-> * idxGrd - 明細分頁
+> * idxGrd - 明細明細
 > * new\_rows - 以 List 包 object 型態 取得使用者貼上的資料
 
 ### ~~this.fnBeforeEditRow()~~
@@ -1021,7 +1021,7 @@ this.fnBeforeDeleteRow = (idxGrd, row) => {
 
 > 參數說明
 >
-> * idxGrd - 第幾個分頁
+> * idxGrd - 第幾個明細
 > * row - 要刪除的那一項資料
 >
 > 最後要回傳 true | false 如果是 false 就會阻擋 刪除的動作
@@ -1040,7 +1040,7 @@ this.fnBeforeDeleteRows = (idxGrd, rows) => {
 
 > 參數說明
 >
-> * idxGrd - 第幾個分頁
+> * idxGrd - 第幾個明細
 > * rows - 要刪除的那些項資料
 >
 > 最後要回傳 true | false 如果是 false 就會阻擋 刪除的動作
@@ -1067,7 +1067,7 @@ this.fnDetailAfterDelete = function(idxGrd){
 
 > 參數說明
 >
-> * idxGrd - 在哪一個分頁中被刪除
+> * idxGrd - 在哪一個明細中被刪除
 
 ### this.fnDetailAfterInsert(idxGrd)
 
@@ -1120,7 +1120,7 @@ this.fnDetailAfterScroll = function(idxGrd) {
 
 > 參數說明
 >
-> * idxGrd - 目前畫面上 Detail 的分頁
+> * idxGrd - 目前畫面上 Detail 的明細
 
 ### this.fnOnSetEditRow()
 
@@ -1134,7 +1134,7 @@ this.fnOnSetEditRow = function(idxGrd, row){
 
 > 參數設定
 >
-> * idxGrd - 當前分頁
+> * idxGrd - 當前明細
 > * row - 選取資料
 
 ### todo this.fnDetailHandField()
@@ -1157,7 +1157,7 @@ this.fnDetailModelChange = (field, value) => {
 
 ### objD.getSelectGrdIndex()
 
-取得當前是第幾個分頁(從0開始)
+取得當前是第幾個明細(從0開始)
 
 ```javascript
 var idxGrd = objD.getSelectGrdIndex()
