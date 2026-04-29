@@ -34,6 +34,22 @@ public function afterpost($masrow)
 > 參數說明
 > masrow - Master Edit 的資料
 
+
+### afterMasterView
+
+取得 Master-View 資料後
+
+```php
+public function afterMasterView($masterView) {
+  // $masterView 是會給你查詢完後的資料
+  
+  return $masterView;
+}
+```
+
+> 參數說明
+> masterView - Master View 查詢完後的資料
+> 
 ### afterScroll
 
 取得一份 Master-Detail 紀錄時
