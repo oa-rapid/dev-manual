@@ -607,6 +607,12 @@ strToDate('20220101')
 ### getServerDate(fmt, act, opts)
 略
 
+### getDtDiff(begdt, enddt)
+```javascript
+getDtDiff('20260101', '20260102')
+//回傳 1
+```
+
 ## ajax
 
 ### ajaxUpload(url, uplFile, successCallback, \[errorCallback])
