@@ -49,7 +49,7 @@ public function afterMasterView($masterView) {
 
 > 參數說明
 > masterView - Master View 查詢完後的資料
-> 
+
 ### afterScroll
 
 取得一份 Master-Detail 紀錄時
